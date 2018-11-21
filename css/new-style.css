@@ -1,0 +1,493 @@
+
+	/***
+	 *
+	 * 作成日：2014-09-01
+	 * 最終修正日：2014-09-08
+	 *
+	 * << 参照しているファイル >>
+	 *   ・ schedule.php : スケジュールページ
+	 *   ・ schedule_detail.php : スケジュール詳細ページ
+	 *
+	***/
+
+
+	/***
+	 *
+	 * テーマカラー
+	 *
+	***/
+
+	.bg_aiiro { background-color:#1d2088; color:#ffffff; }
+	.bg_arch { background-color:#000000; color:#ffffff; }
+	.bg_and { background-color:#033491; color:#ffffff; }
+	.bg_alamas { background-color:#800000; color:#ffffff; }
+	.bg_aisotope { background-color:#D2B200; color:#333333;}
+
+	.fri { color:#ffa500; }
+	.sat { color:#1e90ff; }
+	.sun { color:#ff0000; }
+	.holi { color:#ff0000; }
+
+
+	/***
+	 *
+	 * フォント設定
+	 *
+	***/
+
+	/* IE */
+	@font-face {
+		font-family:tw-cen-mt;
+		src: url(../font/tw-cen-mt.eot);
+	}
+	/* Firefox, Opera, Safari */
+	@font-face {
+		font-family:tw-cen-mt;
+		src: url(../font/tw-cen-mt.ttf) format("truetype");
+	}
+
+
+	/***
+	 *
+	 * タグ別設定
+	 *
+	***/
+
+	html {
+		font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	    height: 100%;
+	    margin: 0;
+	    padding: 0;
+	}
+
+	body {
+		font-size: 11px;
+		color: #333;
+	    height: 100%;
+	    margin: 0;
+	    padding: 0;
+	}
+
+	a { color:#5f5f5f; border: 0 none; }
+	a:hover { color:#a2a2a2; }
+	img { border: 0 none; }
+
+	p {
+	    margin-top: 0;
+		padding-top:0px;
+		padding-bottom:5px;
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.lead-txt {
+	    background: #000;
+	    color: #fff;
+	    text-align: right;
+	}
+	.lead-txt p{
+	  padding:5px 10px 0px 0px;
+	  margin:0;
+	  font-size:0.9em;
+		font-family: tw-cen-mt,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	}
+	.lead-txt p a{
+	  color:#fff;
+	}
+	h2 {
+		border-style: none none dashed solid;
+		border-width: medium medium 1px 5px;
+		padding: 0px 10px;
+		margin-bottom: 1em;
+		margin-top:15px;
+		background-color: transparent;
+		font-size: 14px;
+	}
+
+	h3 {
+		font-size:28px;
+		text-align:right;
+		margin:0;
+		color:#5f5f5f;
+		border-bottom:solid 10px #5f5f5f;
+	}
+
+
+	hr {
+		border : none;
+		border-top : #666 dotted 1px;
+		margin : 15px 20px;
+	}
+
+
+	/***
+	 *
+	 * ここからはimageタグ用の設定
+	 *
+	***/
+
+	.img_border1_width334 img{
+		border:1px solid #cdcdcd;
+		width:334px;
+	}
+
+	.img_border0_width150 img{
+		border:0px;
+		width:150px;
+	}
+
+	.img_opacity07 a:hover img{
+		text-decoration:none;
+		opacity:0.7;
+		filter:alpha(opacity=70);
+		-ms-filter: "alpha( opacity=70 )";
+	}
+
+
+	/***
+	 *
+	 * 共通設定
+	 *
+	***/
+
+	#big_container {
+		position:relative;
+		min-height:100%;
+	}
+
+	#header_wrapper { }
+
+	#content_wrapper {
+		width: 850px;
+		height: 100%;
+		padding-top: 10px;
+		padding-bottom:95px;
+		min-height: 100%;
+		margin: 0 auto;
+	}
+
+
+	/***
+	 *
+	 * header_wrapper設定
+	 *
+	***/
+
+	#header {
+		height:120px;
+		width: auto;
+		background-image: url("../image/header-logo.png");
+		background-color:#000000;
+		background-position:center;
+		background-repeat: no-repeat;
+	}
+
+	#header_navi{
+		background-color:#2c2c2c;
+		color:#FFFFFF;
+		width:100%;
+		height:30px;
+		}
+
+	#navi{
+		margin:0;
+		padding:0;
+		text-align:center;
+		margin-left:50px;
+		padding-top:7px;
+	}
+
+	#header_navi ul#navi li a{
+		font-size:13px;
+		font-family: tw-cen-mt;
+		text-decoration:none;
+		color:#ffffff;
+	}
+
+	#header_navi ul#navi li{
+		display:inline;
+		list-style-type:none;
+		margin-right:50px;
+	}
+
+	#header_navi ul#navi li a:hover{
+		color:#999999;
+	}
+
+	/***************　header sns icon　***************/
+	.sns_icon {
+	    background: #000;
+	    color: #fff;
+	    text-align: right;
+	    padding: 2px 10px 0px 0px;
+	}
+	.sns_icon a {
+	    color: #fff;
+	    font-size: 1.5em;
+	    padding: 3px;
+	}
+	.sns_icon a:hover{
+	  opacity: 0.7;
+	}
+
+	/***
+	 *
+	 * content_wrapper 設定
+	 *
+	***/
+
+	#content_header { }
+	#content_body {
+		padding-bottom:40px;
+	}
+
+	.page_title_en{
+		color:#606060;
+		font-family:tw-cen-mt;
+		font-size:28px;
+		margin:0;
+		padding-bottom:10px;
+	}
+
+	.page_title_jp{
+		color:#606060;
+		font-family:"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3", sans-serif;
+		font-size:21px;
+		margin:0;
+		padding-bottom:10px;
+	}
+
+
+	/***
+	 *
+	 * footer設定
+	 *
+	***/
+
+	#footer {
+		height:40px;
+		padding-top: 15px;
+		background-color: #000;
+		color: #999;
+		bottom: 0;
+		width:100%;
+		position:absolute;
+	}
+
+	#footercompany{
+		margin:0;
+		text-align:center;
+	}
+
+	#footercompany li a{
+		font-size:10px;
+		text-decoration:none;
+		color:#ffffff;
+	}
+
+	#footercompany li{
+		margin:0;
+		display:inline;
+		list-style-type:none;
+		padding-right:8px;
+		padding-left:5px;
+	}
+
+	#footercompany li a:hover{
+		color:#999999;
+	}
+
+	#footertext {
+		background-color: #000;
+		margin:0 auto;
+		text-align:center;
+		color:#CCCCCC;
+		font-size:9px;
+		padding:5px;
+	}
+
+
+	/***
+	 *
+	 * 会社情報
+	 *
+	***/
+
+	.company-info {
+		padding-bottom:30px;
+		margin-top:20px;
+	}
+
+	.company-info table {
+		border-collapse:collapse;
+		width:100%;
+		color:#333333;
+		margin:0;
+		padding:0;
+		text-align:left;
+	}
+
+	.company-info table th {
+		-moz-background-clip:border;
+		-moz-background-inline-policy:continuous;
+		-moz-background-origin:padding;
+		background:#efefef none repeat scroll 0 0;
+		border-bottom:1px solid #dfdfdf;
+		border-top:1px solid #dfdfdf;
+		font-weight:normal;
+		padding:7px 12px;
+		text-align:left;
+		vertical-align:middle;
+		width:30%;
+	}
+
+	.company-info table td {
+		background:#f9f9f9 none repeat scroll 0 0;
+		border-bottom:1px solid #dfdfdf;
+		border-top:1px solid #dfdfdf;
+		font-weight:normal;
+		padding:17px 12px;
+		vertical-align:top;
+	}
+
+	.company-info table li {
+		margin-left:10px;
+	}
+
+	.company-info table td.cpn {
+		background:#e8e8e8 none repeat scroll 0 0;
+		border-bottom:1px solid #dfdfdf;
+		border-top:1px solid #dfdfdf;
+		font-weight:normal;
+		padding:17px 12px;
+		vertical-align:middle;
+	}
+
+
+	#sp_nav{
+	  display: none;
+	}
+
+	/***************************
+	 *
+	 * SP
+	 *
+	****************************/
+	@media screen and (max-width: 667px){
+	body{
+	  background: #000;
+	}
+	#big-container {
+	  margin-bottom: 53px;
+	}
+	.lead-txt {
+	  font-size:0.8em;
+	  border-bottom: 1px dotted #333;
+	  padding-bottom: 10px;
+	  padding-top: 6px;
+	  text-align: center;
+	}
+	.lead-txt p {
+	    padding: 5px 0px 0px 0px;
+	}
+	#header{
+	  height: 50px;
+	  background-size: 140%;
+	}
+	#header_navi {
+	  display: none;
+	}
+	#container {
+	  width: 100%;
+	}
+	#content {
+	  width: 100%;
+	  margin-top: 0px;
+	  padding-top:0px;
+	  padding-bottom: 40px;
+	  background: #fff;
+	}
+	#content_body {
+	    padding-bottom: 80px;
+	}
+
+	h1.menu-title {
+	  padding-bottom: 0px;
+	  text-align: center;
+	  text-shadow: none;
+	}
+	h2.top_tittle {
+	  text-align: center;
+	}
+	#footer {
+	    height: auto;
+	    padding-top: 5px;
+	}
+	#footercompany{
+	  display: none;
+	}
+
+	#content_wrapper {
+	    background: #fff;
+	    width: 97%;
+	    padding: 0px 5px;
+	}
+h1.page_title_en {
+    display: none;
+}
+h3#title_date {
+	text-align: center;
+	font-size: 24px;
+	font-family: tw-cen-mt;
+	border-bottom: none;
+	margin-top: 10px;
+	background: #000;
+	color: #fff;
+	padding: 10px 0px;
+	border-radius: 10px;
+	font-weight: normal;
+}
+
+	/************** SP navigation ***************/
+	#sp_nav{
+	  display: block;
+	  background:#000;
+	  width: 100%;
+	  position: fixed;
+	  bottom: 0;
+	  z-index: 9999;
+	  opacity: 0.8;
+	}
+	#sp_nav ul{
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content:space-between;
+	  width: 93.5%;
+	  height: 45px;
+	  padding:8px 10px 0px 10px;
+	  margin:0px;
+	}
+	#sp_nav ul li{
+	  color:#fff;
+	  list-style: none;
+	  font-size:0.6em;
+	  text-align: center;
+	}
+	#sp_nav ul li a{
+	  color:#e0e0e0;
+	  text-decoration: none;
+	}
+	.fa{
+	  padding-bottom: 3px;
+	}
+
+	#topcontrol{
+	  bottom: 55px !important;
+	  right: 10px !important;
+	}
+	#topcontrol img{
+	  width: 28px !important;
+	  height: 28px !important;
+	}
+
+
+	  }/************** SP end ***************/

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="新宿2丁目の遊び場！クラブ、Bar、カフェなど系列店舗合同ウェブサイト。イベントスケジュール、一押しメニューなど、最新の情報をご紹介します。">
+		<meta name="keywords" content="AiSOTOPE LOUNGE(アイソトープラウンジ),ArcH(アーチ),ALAMAS CAFE(アラマスカフェ),and(アンド),新宿,2丁目,レンタルスペース,ライブ,イベント,ハウス,パーティー">
+		<meta http-equiv=”cache-control” content=”no-cache” />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" href="***BASE_URL***/image/favicon.ico">
+		<link rel="canonical" href="***CANONICAL_URL***">
+		<link href="***BASE_URL***/css/new-style.css" rel="stylesheet" type="text/css">
+		<link href="***BASE_URL***/css/schedule.css" rel="stylesheet" type="text/css">
+		<link href="***BASE_URL***/css/lightbox.css" rel="stylesheet" type="text/css">
+		<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="***BASE_URL***/js/scrolltopcontrol.js"></script>
+		<script type="text/javascript" src="***BASE_URL***/js/lightbox.js"></script>
+		<script type="text/javascript" src="***BASE_URL***/js/jquery.smoothScroll.js"></script>
+
+		<script type="text/javascript">
+			$(function() {
+				$(window).scroll(function () {
+					var s = $(this).scrollTop();
+					var m = 100;
+					$("#test span").text(s);
+					if(s > m) {
+						$("#scroll_menu_schedule").fadeIn('slow');
+					} else if(s < m) {
+						$("#scroll_menu_schedule").fadeOut('slow');
+					}
+				});
+			});
+		</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-12108310-14', 'aliving.net');
+  ga('send', 'pageview');
+
+</script>
+
+	</head>
+
+	<body>
+
+		<div id="fb-root"></div>
+		<script>
+			!function(d,s,id){
+				var js, fjs=d.getElementsByTagName(s)[0];
+				p=/^http:/.test(d.location)?'http':'https';
+				if(!d.getElementById(id)){
+					js=d.createElement(s);
+					js.id=id;
+					js.src=p+'://platform.twitter.com/widgets.js';
+					fjs.parentNode.insertBefore(js,fjs);
+				}
+			}(document, 'script', 'twitter-wjs');
+		</script>
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<div id="big_container">
+
+			<div id="header_wrapper">
+			<div class="lead-txt"><p>新宿2丁目の遊び場！クラブ、Bar、カフェなど系列店舗合同ウェブサイト | <a href="https://translate.google.com/translate?hl=en&sl=ja&tl=en&u=https://aliving.net">ENGLISH</a></p></div>
+			<div class="sns_icon"><a href="https://twitter.com/anniv_aliving" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a href="https://www.facebook.com/events/448058282221744/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="https://www.instagram.com/a_living_/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+<div id="header"></div>
+				<div id="header_navi">
+					<ul id="navi">
+						<li><a href="***BASE_URL***/index.php">INFORMATION</a></li>
+						<li><a href="***BASE_URL***/schedule.php">SCHEDULE</a></li>
+						<li><a href="***BASE_URL***/menu.html">MENU</a></li>
+						<li><a href="***BASE_URL***/artist.html">ARTIST</a></li>
+						<li><a href="***BASE_URL***/access.html">ACCESS</a></li>
+						<li><a href="***BASE_URL***/rental.html">RENTAL</a></li>
+						<li><a href="***BASE_URL***/link.html">LINK</a></li>
+						<li><a href="***BASE_URL***/english.html">ENGLISH</a></li>
+					</ul>
+				</div><!-- header_navi -->
+			</div><!-- header_wrapper -->
+
+			<div id="content_wrapper">
+				<div id="content_header">
+					<h1 class="page_title_en">SCHEDULE</h1>
+					<div id="schedule_back"><i class="fa fa-caret-left fa-lg" aria-hidden="true"></i> <a href="">BACK</a></div>
+					<div id="social_button">
+						<span id="button_facebook">
+							<div class="fb-like" data-href="***CANONICAL_URL***" data-width="100" data-height="20" data-colorscheme="light" data-layout="button_count" data-action="recommend" data-show-faces="false"></div>
+						</span>
+						<span id="button_twitter">
+							<a href="https://twitter.com/share" class="twitter-share-button" data-url="***CANONICAL_URL***" data-text="INFORMATION" data-lang="ja" data-count="none">tweet</a>
+						</span>
+					</div><!-- social_button -->
+					<h3 id="title_date"></h3>
+				</div><!-- content_header -->
+
+				<div id="content_body">
+					<table id="sample_event_table" class="event_place_table">
+						<tr>
+							<th class="bg_place"><img src="***BASE_URL***/image/schedule_place.png"></th>
+							<td>
+								<div class="events_container">
+									<div id="sample_single_event" class="single_event">
+										<div class="event_flyer_box">
+											<div id="sample_event_flyer" class="event_flyer img_opacity07">
+												<a href="***BASE_URL***/image/schedule/and_kento.png" rel="lightbox[EVENT]"><img src="***BASE_URL***/image/schedule/and_kento.png"></a>
+											</div>
+										</div><!-- event_flyer_box -->
+										<div class="event_title_box">
+											<div class="event_info_title"></div>
+											<div class="event_info_subtitle"></div>
+										</div><!-- event_title_box -->
+										<div class="event_info_box">
+											<div class="info_element info_info">INFORMATION</div>
+											<div class="info_element info_constraint"></div>
+											<div class="info_element info_age"></div>
+											<div class="info_element info_floor"></div>
+											<div class="info_element info_genre"></div>
+											<div class="info_element info_open"></div>
+											<div class="info_element info_close"></div>
+											<div class="info_element info_fee"></div>
+											<div class="info_element info_special"></div>
+											<div class="info_element info_guest"></div>
+											<div class="info_element info_ust">
+												<a href="https://www.youtube.com/user/alamascafe" target="_blank"><i class="fa fa-video-camera" aria-hidden="true"></i> ライブ配信</a>
+											</div>
+										</div><!-- event_info_box -->
+										<hr>
+										<div class="event_detail_box">
+											<div class="info_element info_catchcopy"></div>
+											<div class="info_element info_text"></div>
+												<div class="info_element info_pc_url">
+															<span class="fa-stack fa-lg" style="font-size: 1em">
+  														<i class="fa fa-square fa-stack-2x" style="color:#999999"></i>
+  														<i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+															</span>
+															 <a href="" target="_blank"></a>
+												</div>
+												<div class="info_element info_other_url">
+															<span class="fa-stack fa-lg" style="font-size: 1em">
+															<i class="fa fa-square fa-stack-2x" style="color:#999999"></i>
+															<i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+															</span>
+															 <a href="" target="_blank"></a>
+												</div>
+											<div class="info_element info_urls">
+												<div class="info_twitter" id="twitter_sample"><a href="" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></div>
+												<div class="info_facebook"><a href="" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>
+												<div class="info_mixi"><a href="" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+											</div>
+										</div><!-- event_detail_box -->
+									</div><!-- single_event -->
+								</div><!-- events_container -->
+							</td>
+						</tr>
+					</table>
+				</div><!-- content_body -->
+			</div><!-- content_wrapper -->
+
+			<div id="sp_nav">
+				<ul>
+					<li><a href="https://aliving.net" title="TOP"><i class="fa fa-home fa-4x" aria-hidden="true"></i><br>TOP</a></li>
+					<li><a href="schedule.php" title="SCHEDULE"><i class="fa fa-calendar fa-4x" aria-hidden="true"></i><br>SCHEDULE</a></li>
+					<li><a href="menu.html" title="MENU"><i class="fa fa-cutlery fa-4x" aria-hidden="true"></i><br>MENU</a></li>
+					<li><a href="artist.html" title="ARTIST"><i class="fa fa-user fa-4x" aria-hidden="true"></i><br>ARTIST</a></li>
+					<li><a href="access.html" title="ACCESS"><i class="fa fa-map-marker fa-4x" aria-hidden="true"></i><br>ACCESS</a></li>
+					<li><a href="rental.html" title="RENTAL"><i class="fa fa-file-text-o fa-4x" aria-hidden="true"></i><br>RENTAL</a></li>
+					<li><a href="link.html" title="LINK"><i class="fa fa-link fa-4x" aria-hidden="true"></i><br>LINK</a></li>
+					<li><a href="english.html" title="ENGLISH"><i class="fa fa-globe fa-4x" aria-hidden="true"></i><br>ENGLISH</a></li>
+				</ul>
+			</div>
+
+			<div id="footer">
+				<div id="footercompany">
+					<ul>
+						<li><a href="***BASE_URL***/shop.html">店舗</a></li>|
+						<li><a href="***BASE_URL***/company.html">会社概要</a></li>|
+						<li><a href="***BASE_URL***/policy.html">企業理念・ポリシー</a></li>
+					</ul>
+				</div>
+				<div id="footertext">&copy; Cappellasistina All rights reserved.</div>
+			</div><!--footer-->
+
+		</div><!--big-container-->
+
+		<div id="scroll_menu_schedule">
+			<h1 class="menu_title"></h1>
+			<div id="scroll_position">
+				<table class="scroll_schedule">
+					<tr id="row0" class="week">
+						<th><div class="calendar_box">MON</div></th>
+						<th><div class="calendar_box">TUE</div></th>
+						<th><div class="calendar_box">WED</div></th>
+						<th><div class="calendar_box">THU</div></th>
+						<th><div class="calendar_box fri">FRI</div></th>
+						<th><div class="calendar_box sat">SAT</div></th>
+						<th><div class="calendar_box sun">SUN</div></th>
+					</tr>
+					<tr id="row1">
+						<td id="cell11"><div class="calendar_box"></div></td>
+						<td id="cell12"><div class="calendar_box"></div></td>
+						<td id="cell13"><div class="calendar_box"></div></td>
+						<td id="cell14"><div class="calendar_box"></div></td>
+						<td id="cell15"><div class="calendar_box fri"></div></td>
+						<td id="cell16"><div class="calendar_box sat"></div></td>
+						<td id="cell17"><div class="calendar_box sun"></div></td>
+					</tr>
+					<tr id="row2">
+						<td id="cell21"><div class="calendar_box"></div></td>
+						<td id="cell22"><div class="calendar_box"></div></td>
+						<td id="cell23"><div class="calendar_box"></div></td>
+						<td id="cell24"><div class="calendar_box"></div></td>
+						<td id="cell25"><div class="calendar_box fri"></div></td>
+						<td id="cell26"><div class="calendar_box sat"></div></td>
+						<td id="cell27"><div class="calendar_box sun"></div></td>
+					</tr>
+					<tr id="row3">
+						<td id="cell31"><div class="calendar_box"></div></td>
+						<td id="cell32"><div class="calendar_box"></div></td>
+						<td id="cell33"><div class="calendar_box"></div></td>
+						<td id="cell34"><div class="calendar_box"></div></td>
+						<td id="cell35"><div class="calendar_box fri"></div></td>
+						<td id="cell36"><div class="calendar_box sat"></div></td>
+						<td id="cell37"><div class="calendar_box sun"></div></td>
+					</tr>
+					<tr id="row4">
+						<td id="cell41"><div class="calendar_box"></div></td>
+						<td id="cell42"><div class="calendar_box"></div></td>
+						<td id="cell43"><div class="calendar_box"></div></td>
+						<td id="cell44"><div class="calendar_box"></div></td>
+						<td id="cell45"><div class="calendar_box fri"></div></td>
+						<td id="cell46"><div class="calendar_box sat"></div></td>
+						<td id="cell47"><div class="calendar_box sun"></div></td>
+					</tr>
+					<tr id="row5">
+						<td id="cell51"><div class="calendar_box"></div></td>
+						<td id="cell52"><div class="calendar_box"></div></td>
+						<td id="cell53"><div class="calendar_box"></div></td>
+						<td id="cell54"><div class="calendar_box"></div></td>
+						<td id="cell55"><div class="calendar_box fri"></div></td>
+						<td id="cell56"><div class="calendar_box sat"></div></td>
+						<td id="cell57"><div class="calendar_box sun"></div></td>
+					</tr>
+					<tr id="row6">
+						<td id="cell61"><div class="calendar_box"></div></td>
+						<td id="cell62"><div class="calendar_box"></div></td>
+						<td id="cell63"><div class="calendar_box"></div></td>
+						<td id="cell64"><div class="calendar_box"></div></td>
+						<td id="cell65"><div class="calendar_box fri"></div></td>
+						<td id="cell66"><div class="calendar_box sat"></div></td>
+						<td id="cell67"><div class="calendar_box sun"></div></td>
+					</tr>
+				</table>
+			</div><!--scroll_position-->
+		</div><!--scroll_menu_schedule-->
+
+	</body>
+</html>

@@ -1,0 +1,609 @@
+
+	/***
+	 *
+	 * 作成日：2014-09-01
+	 * 最終修正日：2014-09-09
+	 *
+	 * << 参照しているファイル >>
+	 *   ・ schedule.php : スケジュールページ
+	 *   ・ schedule_detail.php : スケジュール詳細ページ
+	 *
+	***/
+
+
+	/***
+	 *
+	 * schedule.php > content_wrapper > content_header 設定
+	 *
+	***/
+
+	#showcase {
+	    overflow: hidden;
+		width:850px;
+		margin: 0 auto;
+		padding-top: 8px;
+	}
+
+	#slider{
+		width:850px;
+		height:315px;
+		padding:1px;
+		border:0px solid #CCC;
+		background-color:#FFF;
+		margin-bottom:10px;
+	}
+
+	#slider img{
+		position:absolute;
+		width: 850px;
+		display:none;
+	}
+
+	#thumbs{
+		width: 850px;
+		height: 100px;
+		margin:0 auto;
+	}
+
+	#thumbs ul li.active{
+		border:2px solid #ccc;
+		background:#fff;
+		padding:2px;
+	}
+
+	#thumbs ul{
+		margin-left:2px;
+		padding:0;
+		list-style:none;
+		margin:0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	#thumbs ul li{
+		margin-left:6px;
+		padding:0;
+		list-style:none;
+		float:left;
+		margin-right:6px;
+		margin-bottom:5px;
+		border:0px solid #CCC;
+		padding:1px;
+		cursor:pointer;
+	}
+
+	#thumbs ul img{
+		float:left;
+		width:70px;
+		height:70px;
+		line-height:70px;
+		overflow:hidden;
+		position:relative;
+		z-index:1;
+		object-fit:cover;
+	}
+
+	.object-fit-img {
+	  object-fit: contain;
+	  font-family: 'object-fit: contain;'
+	}
+
+	/***
+	 *
+	 * schedule.php > content_wrapper > content_body > schedule_navi 設定
+	 *
+	***/
+
+	#schedule_navi {
+		font-family:tw-cen-mt;
+		font-size:1.1em;
+		position:relative;
+		border: 0px solid #000;
+		overflow:hidden;
+		height: 100px;
+		margin : 0px;
+		padding : 0px;
+	}
+
+	#schedule_navi_left {
+		position: absolute;
+		bottom: 10px;
+		left: 20px;
+		width:145px;
+		text-align:left;
+		padding : 0px;
+		margin:0px;
+		border: 0px solid #000;
+	}
+
+	#schedule_navi_left img{
+		padding-right:5px;
+	}
+
+	#schedule_navi_middle {
+		border: 0px solid #000;
+		position: absolute;
+		bottom: 0;
+		left: 200px;
+		width:540px;
+		text-align:center;
+		margin : 0px;
+		padding : 0px;
+	}
+
+	#schedule_navi_month_num {
+		font-size:80px;
+		font-weight:bold;
+		margin : 0px;
+		padding : 0px;
+		margin-right : 15px;
+	}
+
+	#schedule_navi_month_str {
+		font-size:35px;
+		font-weight:bold;
+		line-height: 90%;
+		margin : 0px;
+		padding : 0px;
+		margin-right : 10px;
+	}
+
+
+	#schedule_navi_right {
+		border: 0px solid #000;
+		position: absolute;
+		bottom: 10px;
+		left: 680px;
+		width:145px;
+		text-align:right;
+		margin : 0px;
+		padding : 0px;
+	}
+	#schedule_navi_right img{
+		padding-left:5px;
+	}
+
+
+	/***
+	 *
+	 * schedule.php > content_wrapper > content_body > calendar 設定
+	 *
+	***/
+
+	#calendar {	}
+
+	.calendar_table {
+		width : 850px;
+		border-spacing: 0;
+		    border-left: 1px solid #E3E3E3;
+		    -webkit-border-radius:10px;
+		       -moz-border-radius:10px;
+		         -o-border-radius:10px;
+		            border-radius:10px;
+	}
+
+	.calendar_table th {
+		border-right: 1px #E3E3E3 solid;
+		border-bottom: 1px #E3E3E3 solid;
+		border-top: 1px #E3E3E3 solid;
+		color:#6a6a6a;
+		height:30px;
+
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#eeeeee');
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#eeeeee')";
+		background-image: -moz-linear-gradient(top, #ffffff, #eeeeee);
+		background-image: -ms-linear-gradient(top, #ffffff, #eeeeee);
+		background-image: -o-linear-gradient(top, #ffffff, #eeeeee);
+		background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#eeeeee));
+		background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
+		background-image: linear-gradient(top, #ffffff, #eeeeee);
+		-moz-background-clip: padding;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+	}
+
+	.calendar_table td {
+		min-height: 300px;
+		font-size:12px;
+		max-width : 100px;
+		padding:8px;
+		background:#FFF;
+		border-bottom:solid 1px #E3E3E3;
+		border-right:solid 1px #E3E3E3;
+		vertical-align:top;
+	}
+
+	.calendar_table tr.week{
+		text-align:center;
+		font-size:12px;
+	}
+
+	.calendar_table tr:first-child th:first-child,
+	.calendar_table tr:first-child td:first-child {
+	    -webkit-border-radius: 10px 0 0 0;
+	       -moz-border-radius: 10px 0 0 0;
+	         -o-border-radius: 10px 0 0 0;
+	            border-radius: 10px 0 0 0;
+	}
+	.calendar_table tr:first-child th:last-child,
+	.calendar_table tr:first-child td:last-child {
+	    -webkit-border-radius: 0 10px 0 0;
+	       -moz-border-radius: 0 10px 0 0;
+	         -o-border-radius: 0 10px 0 0;
+	            border-radius: 0 10px 0 0;
+	}
+	.calendar_table tr:last-child th:first-child,
+	.calendar_table tr:last-child td:first-child {
+	    -webkit-border-radius: 0 0 0 10px;
+	       -moz-border-radius: 0 0 0 10px;
+	         -o-border-radius: 0 0 0 10px;
+	            border-radius: 0 0 0 10px;
+	}
+	.calendar_table tr:last-child th:last-child,
+	.calendar_table tr:last-child td:last-child {
+	    -webkit-border-radius: 0 0 10px 0;
+	       -moz-border-radius: 0 0 10px 0;
+	         -o-border-radius: 0 0 10px 0;
+	            border-radius: 0 0 10px 0;
+	}
+
+	.calendar_table a{
+		display:block;
+		text-decoration:none;
+	}
+
+	.calendar_table a:hover{
+		opacity:0.6;
+		filter:alpha(opacity=60);
+		-ms-filter: "alpha( opacity=60 )";
+	}
+
+
+	.calendar_table td.blank {
+	    background: url("image/blank.gif") repeat scroll 0 0;
+		transparent !important;
+	}
+
+
+	.calendar_element {
+		margin:3px 0px;
+		font-weight:bold;
+		font-size:11px;
+		line-height:14px;
+		padding:5px 5px 4px 5px;
+		border-radius:5px;        /* CSS3草案 */
+		-webkit-border-radius:5px;    /* Safari,Google Chrome用 */
+		-moz-border-radius:5px;   /* Firefox用 */
+		word-wrap: break-word;
+	}
+
+
+	/***
+	 *
+	 * schedule_detail.php > content_wrapper > content_header 設定
+	 *
+	***/
+
+	#social_button {
+		position:absolute;
+		margin-top:5px;
+	}
+	.fb_iframe_widget > span {
+			vertical-align: baseline !important;
+	}
+
+	/***
+	 *
+	 * schedule_detail.php > content_wrapper > content_body 設定
+	 *
+	***/
+
+	hr.max {
+		border : none;
+		width : 100%;
+		margin : 30px 0px;
+		padding : 0px;
+
+	}
+
+	#schedule_back{
+		padding-bottom:10px;
+		font-size:1.1em;
+	}
+	#schedule_back img{
+		padding-right:5px;
+	}
+
+	.event_place_table {
+		margin-top:10px;
+		width:850px;
+		height:auto;
+		border-spacing: 0;
+	    border:1px solid #bbbbbb;
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-topright:10px;
+		-moz-border-radius-bottomleft:10px;
+		-moz-border-radius-bottomright:10px;
+		-webkit-border-top-left-radius:10px;
+		-webkit-border-top-right-radius:10px;
+		-webkit-border-bottom-left-radius:10px;
+		-webkit-border-bottom-right-radius:10px;
+		border-top-left-radius:10px;
+		border-top-right-radius:10px;
+		border-bottom-left-radius:10px;
+		border-bottom-right-radius:10px;
+	}
+
+	.event_place_table th{
+		border-right: 1px #bbbbbb solid;
+		text-align:center;
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-bottomleft:10px;
+		-webkit-border-top-left-radius:10px;
+		-webkit-border-bottom-left-radius:10px;
+		border-top-left-radius:10px;
+		border-bottom-left-radius:10px;
+		width:130px;
+		padding: 15px 0px 10px 0px;
+	}
+
+	.event_place_table td{
+		padding : 10px;
+	}
+
+	.events_container {
+		margin : 0px;
+		padding : 0px;
+		color:#333333;
+	}
+
+	.single_event {
+		font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+		margin-left:4px;
+	}
+
+	.event_info_box, .event_detail_box, .event_title_box, .event_flyer_box {
+		magin-top : 10px;
+	}
+
+	.event_flyer {
+		margin-right:5px;
+		margin-bottom:8px;
+		padding:2px;
+		display:inline;
+	}
+
+	.event_info_title{
+		font-weight:bold;
+		font-size:18px;
+		margin-left:10px;
+	}
+
+	.event_info_subtitle{
+		margin-left:10px;
+		font-size:12px;
+		font-weight:bold;
+	}
+
+	.info_info{
+		font-family: tw-cen-mt;
+		margin-left:20px;
+		font-size:12px;
+		font-weight:bold;
+		padding-top:10px;
+		padding-bottom:5px;
+	}
+
+	.info_element {
+		margin: 0px 20px;
+	}
+
+	.info_catchcopy {
+		font-weight:bold;
+		font-size:15px;
+		margin-left:20px;
+		margin-bottom:8px;
+	}
+
+	.info_urls, .info_ust, .info_pc_url, .info_other_url {
+		margin-top:10px;
+		margin-right:5px;
+		display: flex;
+	}
+	.info_guest{
+		margin-top:10px;
+	}
+	.info_ust a {
+	    text-decoration: none;
+	    background: #800000;
+	    border: 1px solid #800000;
+	    border-radius: 20px;
+	    padding: 5px 10px;
+	    color: #fff;
+	}
+.info_ust a:hover {
+    opacity: 0.7;
+}
+.info_twitter a .fa {
+    font-size: 2em;
+    color: #00aced;
+		margin-right: 5px;
+}
+.info_facebook a .fa {
+    font-size: 2em;
+    color: #3b5998;
+		margin-right: 5px;
+}
+.info_mixi a .fa {
+    font-size: 2em;
+    color: #3f729b;
+		margin-right: 5px;
+}
+	/***
+	 *
+	 * schedule_detail.php > scroll_menu_schedule 設定
+	 *
+	***/
+
+	#scroll_menu_schedule{
+		top:0;
+		left:0;
+		display: none;
+		position:fixed;
+		padding-left:20px;
+		padding-top:10px;
+		width:270px;
+		opacity:0.8;
+		filter:alpha(opacity=80);
+		-ms-filter: "alpha( opacity=80 )";
+		background-color:#ffffff;
+		z-index: 9999;
+		border-bottom-left-radius:10px;
+		border-bottom-right-radius:10px;
+		text-align:center;
+		width: 250px;
+		height: 200px;
+	}
+
+	.scroll_schedule {
+		text-align:center;
+		width: 250px;
+		height: 200px;
+		border-spacing: 0;
+	    border-left: 1px solid #E3E3E3;
+	    -webkit-border-radius:10px;
+	       -moz-border-radius:10px;
+	         -o-border-radius:10px;
+	            border-radius:10px;
+		margin-bottom:20px;
+	}
+	.scroll_schedule th {
+		border-right: 1px #E3E3E3 solid;
+		border-bottom: 1px #E3E3E3 solid;
+		border-top: 1px #E3E3E3 solid;
+	    color:#6a6a6a;
+		height:30px;
+
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#eeeeee');
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#eeeeee')";
+		background-image: -moz-linear-gradient(top, #ffffff, #eeeeee);
+		background-image: -ms-linear-gradient(top, #ffffff, #eeeeee);
+		background-image: -o-linear-gradient(top, #ffffff, #eeeeee);
+		background-image: -webkit-gradient(linear, center top, center bottom, from(#ffffff), to(#eeeeee));
+		background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
+		background-image: linear-gradient(top, #ffffff, #eeeeee);
+		-moz-background-clip: padding;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+	}
+	.scroll_schedule td {
+		font-size:12px;
+		padding:8px;
+	    background:#fff;
+	    border-bottom:solid 1px #E3E3E3;
+	    border-right:solid 1px #E3E3E3;
+		vertical-align:top;
+	}
+	.scroll_schedule tr.week{
+		text-align:center;
+		font-size:10px;
+	}
+
+	.scroll_schedule tr:first-child th:first-child,
+	.scroll_schedule tr:first-child td:first-child {
+	    -webkit-border-radius: 10px 0 0 0;
+	       -moz-border-radius: 10px 0 0 0;
+	         -o-border-radius: 10px 0 0 0;
+	            border-radius: 10px 0 0 0;
+	}
+	.scroll_schedule tr:first-child th:last-child,
+	.scroll_schedule tr:first-child td:last-child {
+	    -webkit-border-radius: 0 10px 0 0;
+	       -moz-border-radius: 0 10px 0 0;
+	         -o-border-radius: 0 10px 0 0;
+	            border-radius: 0 10px 0 0;
+	}
+	.scroll_schedule tr:last-child th:first-child,
+	.scroll_schedule tr:last-child td:first-child {
+	    -webkit-border-radius: 0 0 0 10px;
+	       -moz-border-radius: 0 0 0 10px;
+	         -o-border-radius: 0 0 0 10px;
+	            border-radius: 0 0 0 10px;
+	}
+	.scroll_schedule tr:last-child th:last-child,
+	.scroll_schedule tr:last-child td:last-child {
+	    -webkit-border-radius: 0 0 10px 0;
+	       -moz-border-radius: 0 0 10px 0;
+	         -o-border-radius: 0 0 10px 0;
+	            border-radius: 0 0 10px 0;
+	}
+
+
+	.scroll_schedule td.blank {
+	    background: url("image/blank.gif") repeat scroll 0 0;
+		transparent !important;
+	}
+
+	.scroll_schedule a{
+		display:block;
+		text-decoration:none;
+	}
+	.scroll_schedule a:hover{
+		opacity:0.6;
+		filter:alpha(opacity=60);
+		-ms-filter: "alpha( opacity=60 )";
+	}
+
+	/***
+	 *
+	 * SP SCHEDULE DETAIL 設定
+	 *
+	***/
+	@media screen and (max-width: 667px){
+
+		#schedule_back {
+		    padding-top: 10px;
+		}
+		#social_button {
+		    text-align: right;
+		    right: 10px;
+		    top: 120px;
+		}
+		#scroll_menu_schedule {
+		    display: none !important;
+		}
+
+	.event_place_table {
+		width: 100% ;
+		border: none ;
+	}
+	.event_place_table th{
+		display: block;
+		width: 100%;
+		border: none;
+		border-radius: 10px;
+		padding: 15px 0px 10px 0px;
+	}
+	th img {
+	    width: 15%;
+	}
+	.event_place_table td {
+	    padding: 0px;
+	    display: block;
+	    width: 100%;
+	}
+	.single_event {
+		margin-left: 0px;
+	}
+	.event_flyer a img {
+		width: 99.5%;
+		border: none;
+	}
+
+	.events_container {
+	    margin-top: 10px;
+	    margin-bottom: 20px;
+	}
+
+}
