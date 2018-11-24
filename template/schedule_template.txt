@@ -77,16 +77,14 @@
 				<div id="content_header">
 					<div id="showcase">
 						<div id="slider">
-							<a href="schedule_detail.php?date=2018-11-23"><img src="***BASE_URL***/slideimg/1.jpg" alt="AiSOTOPE LOUNGE" /></a>
-							<a href="schedule_detail.php?date=2018-12-01"><img src="***BASE_URL***/slideimg/2.jpg" alt="AiSOTOPE LOUNGE" /></a>
-							<a href="schedule_detail.php?date=2018-12-08"><img src="***BASE_URL***/slideimg/3.jpg" alt="AiSOTOPE LOUNGE" /></a>
+							<a href="schedule_detail.php?date=2018-12-01"><img src="***BASE_URL***/slideimg/1.jpg" alt="AiSOTOPE LOUNGE" /></a>
+							<a href="schedule_detail.php?date=2018-12-08"><img src="***BASE_URL***/slideimg/2.jpg" alt="AiSOTOPE LOUNGE" /></a>
 							</div><!--slider-->
 
 						<div id="thumbs">
 							<ul>
 							<li class="active" rel="1"><img src="***BASE_URL***/slideimg/1.jpg" class="object-fit-img"></li>
 							<li rel="2"><img src="***BASE_URL***/slideimg/2.jpg" class="object-fit-img"></li>
-							<li rel="3"><img src="***BASE_URL***/slideimg/3.jpg" class="object-fit-img"></li>							
 							</ul>
 						</div>
 
