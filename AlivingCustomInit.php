@@ -51,7 +51,7 @@
 		const REGEXP_EXCEL_DATE_PATTERN = "@^\d{4}/\d{1,2}/\d{1,2}$@";
 		const REGEXP_STRICT_URL_PATTERN = "/^(https?|ftp)(:\/\/[-_.!~*\'()a-zA-Z0-9;\/?:\@&=+\$,%#]+)$/";
 
-		public static $placeList = array("and","alamas","aisotope");
+		public static $placeList = array("and","alamas","aisotope","avantgarde");
 		public static $infoList=array("constraint","floor","genre","open","close","fee","guest");
 		public static $detailList=array("catchcopy","text","pc_url","other_url","twitter","facebook","mixi");
 
