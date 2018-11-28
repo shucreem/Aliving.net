@@ -83,7 +83,7 @@ $(function(){
 
 	var targetMonth = "";
 	var todayDate = new Date();
-	var changeDate = new Date(2018, 11-1, 1);
+	var changeDate = new Date(2018, 12-1, 1);
 
 	if( todayDate.getTime() > changeDate.getTime() ){
 		$("#this_month").hide();
@@ -359,7 +359,7 @@ $(function(){
 
 <!-- 4/1 start-->
 <div id="this_month">
-<a href="image/monthly_10.jpg" rel="lightbox[INFORMATION]"><img src="image/monthly_10.jpg" alt="Aliving Book" width="240px" style="margin-bottom:10px;"></a>
+<a href="image/monthly_11.jpg" rel="lightbox[INFORMATION]"><img src="image/monthly_11.jpg" alt="Aliving Book" width="240px" style="margin-bottom:10px;"></a>
 </div>
 
 <!--5/1 start-->
