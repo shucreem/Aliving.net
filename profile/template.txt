@@ -10,6 +10,7 @@
 <link href="https://aliving.net/style.css" rel="stylesheet" type="text/css" />
 <link rel="canonical" href="https://aliving.net" />
 <link href="https://aliving.net/lightbox.css" rel="stylesheet" />
+<link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet">
 
 <script type="text/javascript" src="https://aliving.net/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="https://aliving.net/js/scrolltopcontrol.js"></script>
@@ -34,8 +35,13 @@
 
 </script></head>
 
+
 <body class="mainbody">
-<div id="big-container"><div class="lead-txt"><p>新宿2丁目の遊び場！クラブ、Bar、カフェなど系列店舗合同ウェブサイト | <a href="https://translate.google.com/translate?hl=en&sl=ja&tl=en&u=https://aliving.net">ENGLISH</a></p></div>
+<div id="big-container">
+
+  <div class="lead-txt"><p>新宿2丁目の遊び場！クラブ、Bar、カフェなど系列店舗合同ウェブサイト | <a href="https://translate.google.com/translate?hl=en&sl=ja&tl=en&u=https://aliving.net">ENGLISH</a></p></div>
+  <div class="sns_icon"><a href="https://twitter.com/anniv_aliving" target="_blank"><i class="fab fa-twitter-square"></i></a><a href="https://www.facebook.com/events/448058282221744/" target="_blank"><i class="fab fa-facebook-square"></i></a><a href="https://www.instagram.com/aisotope_lounge/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+
 <div id="header"></div>
 
 <div id="header-navi">

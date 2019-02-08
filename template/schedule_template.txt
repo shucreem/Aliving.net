@@ -56,7 +56,7 @@
 
 			<div id="header_wrapper">
 			<div class="lead-txt"><p>新宿2丁目の遊び場！クラブ、Bar、カフェなど系列店舗合同ウェブサイト | <a href="https://translate.google.com/translate?hl=en&sl=ja&tl=en&u=https://aliving.net">ENGLISH</a></p></div>
-			<div class="sns_icon"><a href="https://twitter.com/anniv_aliving" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a href="https://www.facebook.com/events/448058282221744/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="https://www.instagram.com/a_living_/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+			<div class="sns_icon"><a href="https://twitter.com/anniv_aliving" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a href="https://www.facebook.com/events/448058282221744/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="https://www.instagram.com/aisotope_lounge/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
 
 				<div id="header"></div>
 				<div id="header_navi">
@@ -77,14 +77,16 @@
 				<div id="content_header">
 					<div id="showcase">
 						<div id="slider">
-							<a href="schedule_detail.php?date=2018-12-01"><img src="***BASE_URL***/slideimg/1.jpg" alt="AiSOTOPE LOUNGE" /></a>
-							<a href="schedule_detail.php?date=2018-12-08"><img src="***BASE_URL***/slideimg/2.jpg" alt="AiSOTOPE LOUNGE" /></a>
+							<a href="schedule_detail.php?date=2019-02-23"><img src="***BASE_URL***/slideimg/1.jpg" alt="AiSOTOPE LOUNGE" /></a>
+							<a href="schedule_detail.php?date=2019-03-09"><img src="***BASE_URL***/slideimg/2.jpg" alt="AiSOTOPE LOUNGE" /></a>
+							<a href="schedule_detail.php?date=2019-03-10"><img src="***BASE_URL***/slideimg/3.jpg" alt="AiSOTOPE LOUNGE" /></a>
 							</div><!--slider-->
 
 						<div id="thumbs">
 							<ul>
 							<li class="active" rel="1"><img src="***BASE_URL***/slideimg/1.jpg" class="object-fit-img"></li>
 							<li rel="2"><img src="***BASE_URL***/slideimg/2.jpg" class="object-fit-img"></li>
+							<li rel="3"><img src="***BASE_URL***/slideimg/3.jpg" class="object-fit-img"></li>
 							</ul>
 						</div>
 

@@ -83,7 +83,7 @@ $(function(){
 
 	var targetMonth = "";
 	var todayDate = new Date();
-	var changeDate = new Date(2018, 12-1, 1);
+	var changeDate = new Date(2019, 2-1, 1);
 
 	if( todayDate.getTime() > changeDate.getTime() ){
 		$("#this_month").hide();
@@ -147,7 +147,7 @@ $(function(){
 <div id="big-container">
 
 <div class="lead-txt"><p>新宿2丁目の遊び場！クラブ、Bar、カフェなど系列店舗合同ウェブサイト | <a href="https://translate.google.com/translate?hl=en&sl=ja&tl=en&u=https://aliving.net">ENGLISH</a></p></div>
-<div class="sns_icon"><a href="https://twitter.com/anniv_aliving" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a href="https://www.facebook.com/events/448058282221744/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="https://www.instagram.com/a_living_/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+<div class="sns_icon"><a href="https://twitter.com/anniv_aliving" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a href="https://www.facebook.com/events/448058282221744/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="https://www.instagram.com/aisotope_lounge/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
 <div id="header"></div>
 
 <div id="header-navi">
@@ -202,6 +202,13 @@ $(function(){
 <span class="arch">ArcH</span><span class="aiso">AiSOTOPE</span><span class="alamas">ALAMAS CAFE</span><span class="aiiro">AiiRO CAFE</span>
 <span class="avan">AVANTGARDE</span>
 -->
+<div class="block">
+	<span class="date">2018.12.22(sat)</span>
+		<p class="info-text">
+			<a href="https://aliving.net/2018-countdown/">「2018年カウントダウンイベント特設サイト」がオープンしました！</a>
+		</p>
+</div>	
+
 <div class="block">
 	<span class="date">2018.11.10(sat)</span>
 		<p class="info-text">
@@ -357,12 +364,12 @@ $(function(){
 
 	<div id="side_bar">
 
-<!-- 4/1 start-->
+<!-- 1/1 start-->
 <div id="this_month">
-<a href="image/monthly_11.jpg" rel="lightbox[INFORMATION]"><img src="image/monthly_11.jpg" alt="Aliving Book" width="240px" style="margin-bottom:10px;"></a>
+<a href="image/monthly_01.jpg" rel="lightbox[INFORMATION]"><img src="image/monthly_01.jpg" alt="Aliving Book" width="240px" style="margin-bottom:10px;"></a>
 </div>
 
-<!--5/1 start-->
+<!--2/1 start-->
 <div id="next_month">
 <a href="image/monthly.jpg" rel="lightbox[INFORMATION]"><img src="image/monthly.jpg" alt="Aliving Book" width="240px" style="margin-bottom:10px;"></a>
 </div>
