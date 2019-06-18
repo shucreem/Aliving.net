@@ -1342,6 +1342,7 @@ table.staff_wanted{
 table.staff_wanted .title{
 	background: none repeat scroll 0 0 #FFFDEA;
 	text-align: center;
+	color: #666;
 }
 
 table.staff_wanted .title .title_txt{
@@ -1353,12 +1354,25 @@ table.staff_wanted .title .title_txt{
 table.staff_wanted td {
     border-bottom: 1px solid #D7D7D7;
     border-right: 1px solid #D7D7D7;
-    color: #666666;
+    color: #fff;
     padding-bottom: 7px;
     padding-top: 9px;
     padding-left: 20px;
     padding-right: 20px;
     vertical-align: middle;
+}
+table.staff_wanted tbody tr td a{
+	color: #00bfff	;
+}
+
+input.wanted-close {
+    color: #666;
+    font-weight: bold;
+    font-size: 0.7em;
+    border: none;
+    background: #fff;
+    padding: 15px 40px;
+    border-radius: 5px;
 }
 
 /************** Artist ***************/

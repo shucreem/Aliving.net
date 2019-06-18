@@ -83,7 +83,7 @@ $(function(){
 
 	var targetMonth = "";
 	var todayDate = new Date();
-	var changeDate = new Date(2019, 2-1, 1);
+	var changeDate = new Date(2019, 6-1, 1);
 
 	if( todayDate.getTime() > changeDate.getTime() ){
 		$("#this_month").hide();
@@ -172,19 +172,21 @@ $(function(){
 
 					<div id="showcase">
 						<div id="bigPic">
-							<a href="https://aliving.net/AVANTGARDE/" target="_blank"><img src="slideimg/top_7.jpg" alt="" /></a>
-							<img src="slideimg/top_5.jpg" alt="" />
+							<a href="http://gtopia.jp/" target="_blank"><img src="slideimg/top_1.jpg" alt="" /></a>
+							<a href="https://aliving.net/AVANTGARDE/" target="_blank"><img src="slideimg/top_2.jpg" alt="" /></a>
+							<img src="slideimg/top_3.jpg" alt="" />
 							<a href="https://aliving.net/wanted.html" onclick="window.open('wanted.html','foo','width=540,height=500,scrollbars=yes'); return false;" target="_blank"><img src="slideimg/top_4.jpg" alt="" /></a>
-							<a href="https://aliving.net/aiirocafe/" target="_blank"><img src="slideimg/top_2.jpg" alt="" /></a>
-							<a href="https://www.facebook.com/QUEENSLOUNGETHESHOW/" target="_blank"><img src="slideimg/top_1.jpg" alt="" /></a>
+							<a href="https://aliving.net/aiirocafe/" target="_blank"><img src="slideimg/top_5.jpg" alt="" /></a>
+							<a href="https://www.facebook.com/QUEENSLOUNGETHESHOW/" target="_blank"><img src="slideimg/top_6.jpg" alt="" /></a>
 						</div><!--bigPic-->
 						<div id="smallPic">
 							<ul id="thumbs">
-							<li class="active" rel="1"><img src="slideimg/top_7.jpg" class="object-fit-img"></li>
-							<li rel="2"><img src="slideimg/top_5.jpg" class="object-fit-img"></li>
-							<li rel="3"><img src="slideimg/top_4.jpg" class="object-fit-img"></li>
-							<li rel="4"><img src="slideimg/top_2.jpg" class="object-fit-img"></li>
-							<li rel="5"><img src="slideimg/top_1.jpg" class="object-fit-img"></li>
+							<li class="active" rel="1"><img src="slideimg/top_1.jpg" class="object-fit-img"></li>
+							<li rel="2"><img src="slideimg/top_2.jpg" class="object-fit-img"></li>
+							<li rel="3"><img src="slideimg/top_3.jpg" class="object-fit-img"></li>
+							<li rel="4"><img src="slideimg/top_4.jpg" class="object-fit-img"></li>
+							<li rel="5"><img src="slideimg/top_5.jpg" class="object-fit-img"></li>
+							<li rel="6"><img src="slideimg/top_6.jpg" class="object-fit-img"></li>						
 							</ul>
 						</div><!-- thumbs -->
 					</div><!-- showcase -->
@@ -202,6 +204,31 @@ $(function(){
 <span class="arch">ArcH</span><span class="aiso">AiSOTOPE</span><span class="alamas">ALAMAS CAFE</span><span class="aiiro">AiiRO CAFE</span>
 <span class="avan">AVANTGARDE</span>
 -->
+
+<div class="block">
+	<span class="date">2019.6.19(wed)</span>
+		<p class="info-text">
+			<a href="https://aliving.net/schedule.php?month=2019-07">7月のスケジュール</a>を更新しました。<br />
+		</p>
+</div>
+
+<div class="block">
+	<span class="date">2019.6.1(sat)</span>
+		<p class="info-text">
+			<a href="https://aliving.net/menu.html">6月のメニュー</a>を更新しました。<br />
+		</p>
+</div>
+
+
+<div class="block">
+	<span class="date">2019.3.2(sat)</span>
+		<p class="info-text">
+			<a href="image/20190302.jpg" target="_blank"><img src="image/20190302.jpg" width="100px" align="left" style="padding-right:8px">
+			A livingアプリ サービス終了のご案内</a>
+		</p>
+                          <div style="clear:both"></div>
+</div>	
+
 <div class="block">
 	<span class="date">2018.12.22(sat)</span>
 		<p class="info-text">
@@ -240,19 +267,6 @@ $(function(){
 															<div style="clear:both"></div>
 </div>
 
-<div class="block">
-	<span class="date">2018.3.23(fri)</span>
-		<p class="info-text">
-			<a href="https://aliving.net/schedule.php">4月のスケジュール</a>を更新しました。<br />
-		</p>
-</div>
-
-				<div class="block">
-					<span class="date">2018.1.1(mon)</span>
-						<p class="info-text">
-							<a href="https://aliving.net/menu.html">1月のメニュー</a>を更新しました。<br />
-						</p>
-				</div>
 
 <div class="block">
 	<span class="date">2017.12.15(fri)</span>
@@ -359,17 +373,23 @@ $(function(){
 
 		</div><!--info-leftここまで-->
 		<h2 class="top_tittle"><i class="fa fa-twitter" aria-hidden="true"></i> twitter </h2>
-		<a class="twitter-timeline" data-lang="ja" data-chrome=”noheader nofooter” data-height="300" href="https://twitter.com/anniv_aliving?ref_src=twsrc%5Etfw">Tweets by anniv_aliving</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div><!--infoscrollここまで-->
+			<a class="twitter-timeline" href="https://twitter.com/anniv_aliving/lists/a-living" data-chrome=”noheader nofooter” data-height="600">
+				Tweets from https://twitter.com/anniv_aliving/lists/a-living
+			</a>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<!-- 		<a class="twitter-timeline" data-lang="ja" data-chrome=”noheader nofooter” data-height="600" href="https://twitter.com/anniv_aliving?ref_src=twsrc%5Etfw">Tweets by anniv_aliving</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+ --></div><!--infoscrollここまで-->
 
 	<div id="side_bar">
 
-<!-- 1/1 start-->
+<!-- 4/1 start-->
 <div id="this_month">
-<a href="image/monthly_01.jpg" rel="lightbox[INFORMATION]"><img src="image/monthly_01.jpg" alt="Aliving Book" width="240px" style="margin-bottom:10px;"></a>
+<a href="image/monthly_05.jpg" rel="lightbox[INFORMATION]"><img src="image/monthly_05.jpg" alt="Aliving Book" width="240px" style="margin-bottom:10px;"></a>
 </div>
 
-<!--2/1 start-->
+<!--5/1 start-->
 <div id="next_month">
 <a href="image/monthly.jpg" rel="lightbox[INFORMATION]"><img src="image/monthly.jpg" alt="Aliving Book" width="240px" style="margin-bottom:10px;"></a>
 </div>
@@ -377,8 +397,13 @@ $(function(){
 <div class="side_banar">
 	<a href="https://ameblo.jp/aliving2/theme-10097006720.html" target="_blank"><img src="image/banar_acvrep.png" alt="活動報告" width="240px" style="margin-bottom:10px"></a>
 	<a href="https://aliving.net/AVANTGARDE/" target="_blank"><img src="image/avant.png" alt="AVANTGARDE TOKYO" width="240px" style="margin-bottom:10px"></a>
-	<a href="https://www.rakuten.ne.jp/gold/menpan/" target="_blank" onClick="ga('send','event','AD','click' ,'https://www.rakuten.ne.jp/gold/menpan/');"><img src="image/GX3.jpg" alt="GX3" width="100%" style="margin-bottom:10px"></a>
-	<a href="https://aliving.net/OVEGAS/" target="_blank"><img src="image/banar_ovegas.png" alt="魅惑の二丁目エンターテインメント！おベガス！" width="240px"></a>
+	<a href="https://www.gx3underwear.com/" target="_blank" onClick="ga('send','event','AD','click' ,'https://www.gx3underwear.com/');"><img src="image/GX3.jpg" alt="GX3" width="100%" style="margin-bottom:10px"></a>
+<!-- 	<a href="https://aliving.net/OVEGAS/" target="_blank"><img src="image/banar_ovegas.png" alt="魅惑の二丁目エンターテインメント！おベガス！" width="240px"></a> -->
+	<img src="image/akemi_banner.jpg" alt="スナックアケミ" width="240px" style="margin-bottom:-4px" >
+	<video controls poster="image/akemi_movie_poster.png" width="240" height="auto">
+		<source src="image/dance03-3.mp4">
+	</video>
+
 </div>
 
 
