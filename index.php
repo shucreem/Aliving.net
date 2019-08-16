@@ -16,7 +16,7 @@
 <meta property="og:image" content="" />
 
 <link rel="shortcut icon" href="image/favicon.ico" />
-<link href="style.css?20180402" rel="stylesheet" type="text/css" />
+<link href="style.css?20190730" rel="stylesheet" type="text/css" />
 <link rel="canonical" href="https://aliving.net" />
 <link href="lightbox.css" rel="stylesheet" />
 <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -83,7 +83,7 @@ $(function(){
 
 	var targetMonth = "";
 	var todayDate = new Date();
-	var changeDate = new Date(2019, 6-1, 1);
+	var changeDate = new Date(2019, 8-1, 1);
 
 	if( todayDate.getTime() > changeDate.getTime() ){
 		$("#this_month").hide();
@@ -172,7 +172,6 @@ $(function(){
 
 					<div id="showcase">
 						<div id="bigPic">
-							<a href="http://gtopia.jp/" target="_blank"><img src="slideimg/top_1.jpg" alt="" /></a>
 							<a href="https://aliving.net/AVANTGARDE/" target="_blank"><img src="slideimg/top_2.jpg" alt="" /></a>
 							<img src="slideimg/top_3.jpg" alt="" />
 							<a href="https://aliving.net/wanted.html" onclick="window.open('wanted.html','foo','width=540,height=500,scrollbars=yes'); return false;" target="_blank"><img src="slideimg/top_4.jpg" alt="" /></a>
@@ -181,12 +180,11 @@ $(function(){
 						</div><!--bigPic-->
 						<div id="smallPic">
 							<ul id="thumbs">
-							<li class="active" rel="1"><img src="slideimg/top_1.jpg" class="object-fit-img"></li>
-							<li rel="2"><img src="slideimg/top_2.jpg" class="object-fit-img"></li>
-							<li rel="3"><img src="slideimg/top_3.jpg" class="object-fit-img"></li>
-							<li rel="4"><img src="slideimg/top_4.jpg" class="object-fit-img"></li>
-							<li rel="5"><img src="slideimg/top_5.jpg" class="object-fit-img"></li>
-							<li rel="6"><img src="slideimg/top_6.jpg" class="object-fit-img"></li>						
+							<li class="active" rel="1"><img src="slideimg/top_2.jpg" class="object-fit-img"></li>
+							<li rel="2"><img src="slideimg/top_3.jpg" class="object-fit-img"></li>
+							<li rel="3"><img src="slideimg/top_4.jpg" class="object-fit-img"></li>
+							<li rel="4"><img src="slideimg/top_5.jpg" class="object-fit-img"></li>
+							<li rel="5"><img src="slideimg/top_6.jpg" class="object-fit-img"></li>						
 							</ul>
 						</div><!-- thumbs -->
 					</div><!-- showcase -->
@@ -206,11 +204,18 @@ $(function(){
 -->
 
 <div class="block">
-	<span class="date">2019.6.19(wed)</span>
+	<span class="date">2019.7.21(sun)</span>
 		<p class="info-text">
-			<a href="https://aliving.net/schedule.php?month=2019-07">7月のスケジュール</a>を更新しました。<br />
+			<a href="https://aliving.net/schedule.php?month=2019-08">8月のスケジュール</a>を更新しました。<br />
 		</p>
 </div>
+
+<div class="block">
+	<span class="date">2018.7.8(mon)</span>
+		<p class="info-text">
+			<a href="anniv2019/">2019年アニバーサリー特設サイトオープンいたしました！</a>
+		</p>
+</div>	
 
 <div class="block">
 	<span class="date">2019.6.1(sat)</span>
@@ -373,9 +378,8 @@ $(function(){
 
 		</div><!--info-leftここまで-->
 		<h2 class="top_tittle"><i class="fa fa-twitter" aria-hidden="true"></i> twitter </h2>
-			<a class="twitter-timeline" href="https://twitter.com/anniv_aliving/lists/a-living" data-chrome=”noheader nofooter” data-height="600">
-				Tweets from https://twitter.com/anniv_aliving/lists/a-living
-			</a>
+			<a class="twitter-timeline" href="https://twitter.com/anniv_aliving/lists/a-living?ref_src=twsrc%5Etfw" data-chrome=”noheader nofooter” data-height="600">A Twitter List by anniv_aliving</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
@@ -384,12 +388,12 @@ $(function(){
 
 	<div id="side_bar">
 
-<!-- 4/1 start-->
+<!-- 6/1 start-->
 <div id="this_month">
-<a href="image/monthly_05.jpg" rel="lightbox[INFORMATION]"><img src="image/monthly_05.jpg" alt="Aliving Book" width="240px" style="margin-bottom:10px;"></a>
+<a href="image/monthly_07.jpg" rel="lightbox[INFORMATION]"><img src="image/monthly_07.jpg" alt="Aliving Book" width="240px" style="margin-bottom:10px;"></a>
 </div>
 
-<!--5/1 start-->
+<!--7/1 start-->
 <div id="next_month">
 <a href="image/monthly.jpg" rel="lightbox[INFORMATION]"><img src="image/monthly.jpg" alt="Aliving Book" width="240px" style="margin-bottom:10px;"></a>
 </div>

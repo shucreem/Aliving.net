@@ -77,10 +77,10 @@
 				<div id="content_header">
 					<div id="showcase">
 						<div id="slider">
-							<a href="schedule_detail.php?date=2019-06-28"><img src="***BASE_URL***/slideimg/1.jpg" alt="AiSOTOPE LOUNGE" /></a>
-							<a href="schedule_detail.php?date=2019-06-30"><img src="***BASE_URL***/slideimg/2.jpg" alt="AiSOTOPE LOUNGE" /></a>
-							<a href="schedule_detail.php?date=2019-07-05"><img src="***BASE_URL***/slideimg/3.jpg" alt="AiSOTOPE LOUNGE" /></a>
-							<a href="schedule_detail.php?date=2019-07-13"><img src="***BASE_URL***/slideimg/4.jpg" alt="AiSOTOPE LOUNGE" /></a>
+							<a href="schedule_detail.php?date=2019-08-24"><img src="***BASE_URL***/slideimg/1.jpg" alt="AiSOTOPE LOUNGE" /></a>
+							<a href="schedule_detail.php?date=2019-08-30"><img src="***BASE_URL***/slideimg/2.jpg" alt="AiSOTOPE LOUNGE" /></a>
+							<a href="schedule_detail.php?date=2019-08-31"><img src="***BASE_URL***/slideimg/3.jpg" alt="AiSOTOPE LOUNGE" /></a>
+							<a href="schedule_detail.php?date=2019-09-14"><img src="***BASE_URL***/slideimg/4.jpg" alt="AiSOTOPE LOUNGE" /></a>
 							</div><!--slider-->
 
 						<div id="thumbs">

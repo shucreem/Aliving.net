@@ -187,6 +187,7 @@ a img {
 	overflow-x:hidden;
 }
 
+
 #side_bar {
 	float:right;
 	text-align:right;
@@ -1539,6 +1540,11 @@ h2.top_tittle {
 p.info-text {
   margin-left: 70px;
 }
+
+iframe#twitter-widget-0{
+    width: calc(100vw - 20px)!important;
+  }
+
 #side_bar {
     float: none;
     text-align: center;
