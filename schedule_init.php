@@ -21,7 +21,7 @@
 	define( 'SCHEDULE_DETAIL_TEMPLATE' , BASE_DIR.'/template/schedule_detail_template.txt');
 	
 	define( 'PLACE_LIST_STR' , 'and,aiiro,alamas,arch,aisotope,avantgarde' );
-	define( 'INFO_LIST_STR' , 'constraint,age,floor,genre,open,close,fee,special,guest' );
+	define( 'INFO_LIST_STR' , 'constraint,floor,genre,open,close,fee,special,guest' );
 	define( 'DETAIL_LIST_STR' , 'catchcopy,text,pc_url,other_url,twitter,facebook,mixi' );
 	
 	require_once( BASE_DIR.'/AlivingCustom.php' );

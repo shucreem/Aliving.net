@@ -18,12 +18,14 @@
 <script type="text/javascript" src="js/lightbox.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">google.load("jquery", "1.6");</script>
+
+
 <script type="text/javascript">
 $(function(){
 
 	var targetMonth = "";
 	var todayDate = new Date();
-	var changeDate = new Date(2019, 7-1, 1);
+	var changeDate = new Date(2020, 3-30, 1);
 
 	if( todayDate.getTime() > changeDate.getTime() ){
 		$("#this_month").hide();
@@ -44,40 +46,40 @@ $(function(){
 		}
 	});
 
-   // #で始まるアンカーをクリックした場合に処理
-   $('a[href^=#]').click(function() {
+   // // #で始まるアンカーをクリックした場合に処理
+   // $('a[href^="#"]').click(function() {
 
-      // スクロールの速度
-      var speed = 400;// ミリ秒
+   //    // スクロールの速度
+   //    var speed = 400;// ミリ秒
 
-      // アンカーの値取得
-      var href= $(this).attr("href");
-      // 移動先を数値で取得
-	  var position = $(targetMonth).children(href).offset().top;
+   //    // アンカーの値取得
+   //    var href= $(this).attr("href");
+   //    // 移動先を数値で取得
+	  // var position = $(targetMonth).children(href).offset().top;
 
-      // スムーススクロール
-      $($.browser.safari ? 'body' : 'html').animate({scrollTop:position}, speed, 'swing');
-      return false;
-   });
+   //    // スムーススクロール
+   //    $($.browser.safari ? 'body' : 'html').animate({scrollTop:position}, speed, 'swing');
+   //    return false;
+   // });
 });
 </script>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-12108310-14"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  ga('create', 'UA-12108310-14', 'aliving.net');
-  ga('send', 'pageview');
-
+  gtag('config', 'UA-12108310-14');
 </script>
+
 </head>
 
 <body class="mainbody">
 <div id="big-container">
 	<div class="lead-txt"><p>新宿2丁目の遊び場！クラブ、Bar、カフェなど系列店舗合同ウェブサイト | <a href="https://translate.google.com/translate?hl=en&sl=ja&tl=en&u=https://aliving.net">ENGLISH</a></p></div>
-	<div class="sns_icon"><a href="https://twitter.com/anniv_aliving" target="_blank"><i class="fab fa-twitter-square"></i></a><a href="https://www.facebook.com/events/448058282221744/" target="_blank"><i class="fab fa-facebook-square"></i></a><a href="https://www.instagram.com/a_living_/" target="_blank"><i class="fab fa-instagram"></i></a></div>
+	<div class="sns_icon"><a href="https://twitter.com/AiSOTOPE_LOUNGE" target="_blank"><i class="fab fa-twitter-square"></i></a><a href="https://www.facebook.com/AiSOTOPE.info/" target="_blank"><i class="fab fa-facebook-square"></i></a><a href="https://www.instagram.com/a_living_/" target="_blank"><i class="fab fa-instagram"></i></a></div>
 
 <div id="header"></div>
 
@@ -107,6 +109,7 @@ $(function(){
 	<a href="#alamas"><img src="image/foodmenu/menu_alamas.png"></a>
     <a href="#aiso"><img src="image/foodmenu/menu_aiso.png"></a>
     <a href="#aiiro"><img src="image/foodmenu/menu_aiirocafe.png"></a>
+    <a href="#avant"><img src="image/foodmenu/menu_avantgarde.png"></a>
 </div>
 
 
@@ -114,17 +117,17 @@ $(function(){
 	<a href="#alamas"><img src="image/foodmenu/menu_alamas.png"></a>
     <a href="#aiso"><img src="image/foodmenu/menu_aiso.png"></a>
     <a href="#aiiro"><img src="image/foodmenu/menu_aiirocafe.png"></a>
-
+    <a href="#avant"><img src="image/foodmenu/menu_avantgarde.png"></a>
 </div>
 
-<!----------------------------7/1 start---------------------------->
+<!----------------------------3/1 start---------------------------->
 <div id="this_month">
 
 <p class="menu-txt">各店、グランドメニューの他、月替わりの期間限定ドリンクやフードをご提供☆<br />
 	中には他ではお目にかかれない変わりダネも有り! 新宿二丁目ならではの空気感と共にぜひご堪能あれ♪
 </p>
 
-<h2 id="alamas">ALAMAS CAFE</h2>
+<h2 id="alamas" name="alamas">ALAMAS CAFE</h2>
 <div id="pay_icon">
 <i class="fa fa-credit-card fa-fw" aria-hidden="true"></i> CREDIT OK!&nbsp;&nbsp;
 <i class="fa fa-money fa-fw" aria-hidden="true"></i> WEB MONEY OK!
@@ -133,18 +136,19 @@ $(function(){
 	</div>
 
 <div id="menu-2">
-	<img src="image/foodmenu/alamas-19july.jpg" width="400px" /><br />
-		<p><span class="food-font">シビ辛! 夏野菜のブタミナ丼<br />
-			&yen;750〜</span><br />
-			厚めに切った食べ応えのある豚肉と夏野菜を素揚げして、甜麺醤ソースで炒め合わせました。自家製ラー油をかけて実山椒を散らせば、甘くて辛くて痺れて白米を頬張りたくなること請け合いです☆
+	<img src="image/foodmenu/alamas-20mar.jpg" width="400px" /><br />
+		<p><span class="food-font">菜の花とアサリのクリームパスタ<br />
+			&yen;900</span><br />
+			甘みたっぷりの新玉ねぎとほろ苦い菜の花に、あさりの旨みをプラスして旬を楽しめる味わいに。太めのパスタとクリーム仕立てで食べ応えアップ！
 		</p>
 </div>
 
 <div id="menu-2">
-	<img src="image/foodmenu/alamas-19july_2.jpg" width="400px" /><br />
-		<p><span class="food-font">壷漬けパインラム<br />
-			&yen;650</span><br />
-			夏本番! 甘い香りのラムにパイナップルをたっぷり漬け込みました! 香りと裏腹な刺激的な味をお楽しみください!
+	<img src="image/foodmenu/alamas-20mar_2.jpg" width="400px" /><br />
+		<p><span class="food-font">スパイス梅酒スムージー<br />
+			&yen;900</span><br />
+			7種類のスパイスで漬け込んだ、ただ、ただ美味しい梅酒のスムージーです。
+ご賞味あれ♡
 		</p>
 </div>
 
@@ -160,14 +164,14 @@ $(function(){
 <div id="menu-3">
 	<img src="image/foodmenu/menu-02.jpg" /><br />
 		<p><span class="food-font">グリーンカレー<br />
-			&yen;600</span><br />
+			&yen;650</span><br />
 			辛ウマ!!病みつき!!本格派!!鶏肉、タケノコ、具だくだんの辛〜いカレー。</p>
 </div>
 
 <div id="menu-3">
 	<img src="image/foodmenu/menu-03.jpg" /><br />
 		<p><span class="food-font">ニコニコALAMASカレー<br />
-			&yen;600</span><br />
+			&yen;700</span><br />
 			じっくり煮込んだカフェの定番カレー。季節の野菜をトッピング。</p>
 </div>
 
@@ -175,7 +179,7 @@ $(function(){
 <div id="menu-3">
 	<img src="image/foodmenu/menu-08.jpg" /><br />
 		<p><span class="food-font">やみつき唐揚げ<br />
-			&yen;500</span><br />
+			&yen;550</span><br />
 			秘密のスパイスに漬け込みました。ウマ過ぎて１皿じゃ足りないかも!?</p>
 </div>
 
@@ -203,7 +207,7 @@ $(function(){
 <div id="menu-3">
 	<img src="image/foodmenu/menu-13.jpg" /><br />
 		<p><span class="food-font">焼きたてワッフル バニラジェラート添え<br />
-			&yen;500</span><br />
+			&yen;600</span><br />
 			外はさっくり中はもっちりのアメリカンタイ プ。バニラジェラードがたっぷり盛られ、５ 種類のソースをトッピングで選んで頂けます。</p>
 </div>
 
@@ -251,27 +255,27 @@ $(function(){
 
 &nbsp;
 
-<h2 id="aiso">AiSOTOPE LOUNGE</h2>
+<h2 id="aiso" name="aiso">AiSOTOPE LOUNGE</h2>
 <div id="pay_icon">
 <i class="fa fa-credit-card fa-fw" aria-hidden="true"></i> CREDIT OK!&nbsp;&nbsp;
 </div>
 	<p>メインとサブの２フロアに分かれており、平日は企画もののBAR営業を中心におこない、週末はクラブとして多種多様なイベントが開催され、多様な人達でにぎわう。昼間もオフ会や誕生日会、同性婚パーティーなどの会場と利用されている。</p>
 
-<div id="menu-2">
-	<img src="image/foodmenu/aiso_mainmenu-19july.jpg" width="400px" /><br />
+<!-- <div id="menu-2">
+	<img src="image/foodmenu/aiso_mainmenu-20jan.jpg" width="400px" /><br />
 		<p><span class="food-font">MAIN BAR一押し<br />
-			『SUNSET』&nbsp;&yen;1000</span><br />
-			パッションフルーツのリキュールを使ってみんな大好きなモヒートに仕立てました♥ 夏にピッタリのカクテルを片手に音楽にノッて夏の思い出作っちゃお♥
+			『ストロベリーショコラミルク』&nbsp;&yen;800</span><br />
+			ストロベリークリームのお酒をミルクで割ったあま～いカクテル♥<br>隠し味にチョコリキュールも入れて甘さ倍増!!
 		</p>
+</div> -->
+
+<div id="menu-6">
+	<img src="image/foodmenu/aiso_mainmenu-20mar.jpg" width="400px" /><br />
+		<p><span class="food-font">『舞爽』&nbsp;&yen;800</span><br />
+			日本酒×梅！レモンとソーダでさっぱりテイストに仕上げながらも気づいたらほろ酔いに…。春の陽気と共に一杯どうぞ♡
+					</p>
 </div>
 
-<div id="menu-2">
-	<img src="image/foodmenu/aiso_submenu-19july.jpg" width="400px" /><br />
-		<p><span class="food-font">LOUNGE BAR一押し<br />
-						『BLUE OCEAN』&nbsp;&yen;700</span><br />
-			夏到来!! クラッシュアイスに涼やかなブルーキュラソーの青色とグレープフルーツとトニックウォーターの甘酸っぱい味わいが夏気分を更に盛り上げること間違いなし☆
-		</p>
-</div>
 <div class="clear"></div>
 
 <div id="menu-5">
@@ -287,7 +291,7 @@ $(function(){
 </div>
 
 <div id="menu-5">
-	<p><span class="food-font">カクテル&nbsp;COCKTAIL&nbsp;&nbsp;各種&nbsp;&yen;600～</span><br />
+	<p><span class="food-font">カクテル&nbsp;COCKTAIL&nbsp;&nbsp;各種&nbsp;&yen;700～</span><br />
 	※アルコール　濃いめ+￥100　ダブル+￥300　でオーダー承ります。</p>
 </div>
 
@@ -300,7 +304,7 @@ $(function(){
 </div>
 
 <div id="menu-5">
-	<p><span class="food-font">グラスワイン&nbsp;GLASS WINE&nbsp;&nbsp;各種&nbsp;&yen;600</span></p>
+	<p><span class="food-font">グラスワイン&nbsp;GLASS WINE&nbsp;&nbsp;各種&nbsp;&yen;700</span></p>
 </div>
 
 <div id="menu-5">
@@ -309,7 +313,7 @@ $(function(){
 
 
 <div id="menu-4">
-	<p><span class="food-font">シャンパン CHAMPAGNE　各種&nbsp;&yen;13,000～</span></p>
+	<p><span class="food-font">シャンパン CHAMPAGNE　各種&nbsp;&yen;15,000～</span></p>
 </div>
 
 <div class="clear"></div>
@@ -318,7 +322,7 @@ $(function(){
 
 &nbsp;
 
-<h2 id="aiiro">AiiRO CAFE</h2>
+<h2 id="aiiro" name="aiiro">AiiRO CAFE</h2>
 <div id="pay_icon">
 <i class="fa fa-credit-card fa-fw" aria-hidden="true"></i> CREDIT OK!&nbsp;&nbsp;
 <i class="fa fa-money fa-fw" aria-hidden="true"></i> WEB MONEY OK!
@@ -326,16 +330,16 @@ $(function(){
 <p>仲通りに面した、カジュアルなオープンカフェ＆バー。常連客もビギナーの方もすぐに打ち解ける事が空間をご提供しており、外国人の方も多くご来店されています。</p>
 
 <div id="menu-6">
-	<img src="image/foodmenu/aiiro-19july.jpg" width="400px" /><br />
-		<p><span class="food-font">『MALFY LEMON』&nbsp;&yen;1000</span><br />
-			今月のカクテルは、夏らしくジンベースのレモンカクテルです。5種類のボタニカルを使った深みのあるジンにフレッシュレモン! んま～なんて夏らしい★ バルーングラスでインスタばえはもちろん!是非お試しあれ♥
+	<img src="image/foodmenu/aiiro-20mar.jpg" width="400px" /><br />
+		<p><span class="food-font">『White Plumwine』&nbsp;&yen;900</span><br />
+			AiiROCAFE 完全オリジナルカクテル！梅酒とグレープフルーツにあとヒミツの味がもう一つ入った店長のぞみの力作です♡
 					</p>
 </div>
 
 <div class="clear"></div>
 
 <div id="menu-5">
-	<p><span class="food-font">SOFT DRINK&nbsp;各種&yen;500</span></p>
+	<p><span class="food-font">SOFT DRINK&nbsp;各種&yen;600</span></p>
 </div>
 
 <div id="menu-5">
@@ -343,28 +347,43 @@ $(function(){
 </div>
 
 <div id="menu-5">
-	<p><span class="food-font">COCKTAIL&nbsp;各種&yen;700</span></p>
+	<p><span class="food-font">COCKTAIL&nbsp;各種&yen;700〜&yen;1200</span></p>
 </div>
 
 <div id="menu-5">
-	<p><span class="food-font">SHOCHU&nbsp;各種&yen;600</span></p>
+	<p><span class="food-font">SHOCHU&nbsp;各種&yen;700</span></p>
 </div>
 
 <div class="clear"></div>
+
+&nbsp;
+
+
+<h2 id="avant" name="avant">AVANTGARDE</h2>
+
+<div id="menu-6">
+	<img src="image/foodmenu/AVANTGARDE-20mar.jpg" width="400px" /><br />
+		<p><span class="food-font">『春はあけぼの！梅酒が飲みたい』鍛高譚梅酒 ボトル&nbsp;&yen;6,000</span><br />
+			今回新しく増えました！鍛高譚の梅酒！<br>これがさっぱりしていて美味しい春の風に吹かれて君に乾杯。
+					</p>
+</div>
+
+<div class="clear"></div>
+
 
 &nbsp;
 
 </div><!--this_month-->
 
 
-<!----------------------------8/1 start---------------------------->
+<!----------------------------4/1 start---------------------------->
 <div id="next_month">
 
 <p class="menu-txt">各店、グランドメニューの他、月替わりの期間限定ドリンクやフードをご提供☆<br />
 	中には他ではお目にかかれない変わりダネも有り! 新宿二丁目ならではの空気感と共にぜひご堪能あれ♪
 </p>
 
-<h2 id="alamas">ALAMAS CAFE</h2>
+<h2 id="alamas" name="alamas">ALAMAS CAFE</h2>
 <div id="pay_icon">
 <i class="fa fa-credit-card fa-fw" aria-hidden="true"></i> CREDIT OK!&nbsp;&nbsp;
 <i class="fa fa-money fa-fw" aria-hidden="true"></i> WEB MONEY OK!
@@ -373,18 +392,18 @@ $(function(){
 	</div>
 
 <div id="menu-2">
-	<img src="image/foodmenu/alamas-19august.jpg" width="400px" /><br />
-		<p><span class="food-font">珍メニュー 夏のカフェうなメシ<br />
-			&yen;900〜</span><br />
-			蒸し暑い夜には鰻とアボカドで栄養補給を。たっぷりの薬味で香りと食感を楽しむちらし寿司風と、バターのコクとバルサミコ酢の酸味が効いたオープンオムレツ風。最後はスープをかけて召し上がれ。
+	<img src="image/foodmenu/alamas-20apr.jpg" width="400px" /><br />
+		<p><span class="food-font">スペアリブのココナッツ煮込み<br />
+			&yen;950</span><br />
+			豚スペアリブをスパイスと豚骨スープでコトコト煮込んで、ココナツミルクでまろやかに仕上げたアジアンテイストなスープ。味付けの違う副菜をチョットずつ混ぜて味変を楽しみながら召し上がれ。
 		</p>
 </div>
 
 <div id="menu-2">
-	<img src="image/foodmenu/alamas-19august_2.jpg" width="400px" /><br />
-		<p><span class="food-font">フローズンコーヒー<br />
-			&yen;600</span><br />
-			暑いこの頃に冷たーいドリンクはいかがですか? ミルクとコーヒーで大人の甘味をお楽しみ下さい。ノンアルコールドリンクですがアルコールをオプションで追加可能!! リニューアルしたコーヒーも是非お試しください!
+	<img src="image/foodmenu/alamas-20apr_2.jpg" width="400px" /><br />
+		<p><span class="food-font">パ･フェラ･テ<br />
+			&yen;650</span><br />
+			食べ方はあなた次第。。大きなお口で上からでも、下からでも。。<br>自家製コーヒーゼリーをお楽しみください。
 		</p>
 </div>
 
@@ -400,14 +419,14 @@ $(function(){
 <div id="menu-3">
 	<img src="image/foodmenu/menu-02.jpg" /><br />
 		<p><span class="food-font">グリーンカレー<br />
-			&yen;600</span><br />
+			&yen;650</span><br />
 			辛ウマ!!病みつき!!本格派!!鶏肉、タケノコ、具だくだんの辛〜いカレー。</p>
 </div>
 
 <div id="menu-3">
 	<img src="image/foodmenu/menu-03.jpg" /><br />
 		<p><span class="food-font">ニコニコALAMASカレー<br />
-			&yen;600</span><br />
+			&yen;700</span><br />
 			じっくり煮込んだカフェの定番カレー。季節の野菜をトッピング。</p>
 </div>
 
@@ -415,7 +434,7 @@ $(function(){
 <div id="menu-3">
 	<img src="image/foodmenu/menu-08.jpg" /><br />
 		<p><span class="food-font">やみつき唐揚げ<br />
-			&yen;500</span><br />
+			&yen;550</span><br />
 			秘密のスパイスに漬け込みました。ウマ過ぎて１皿じゃ足りないかも!?</p>
 </div>
 
@@ -443,7 +462,7 @@ $(function(){
 <div id="menu-3">
 	<img src="image/foodmenu/menu-13.jpg" /><br />
 		<p><span class="food-font">焼きたてワッフル バニラジェラート添え<br />
-			&yen;500</span><br />
+			&yen;600</span><br />
 			外はさっくり中はもっちりのアメリカンタイ プ。バニラジェラードがたっぷり盛られ、５ 種類のソースをトッピングで選んで頂けます。</p>
 </div>
 
@@ -491,27 +510,27 @@ $(function(){
 
 &nbsp;
 
-<h2 id="aiso">AiSOTOPE LOUNGE</h2>
+<h2 id="aiso" name="aiso">AiSOTOPE LOUNGE</h2>
 <div id="pay_icon">
 <i class="fa fa-credit-card fa-fw" aria-hidden="true"></i> CREDIT OK!&nbsp;&nbsp;
 </div>
 	<p>メインとサブの２フロアに分かれており、平日は企画もののBAR営業を中心におこない、週末はクラブとして多種多様なイベントが開催され、多様な人達でにぎわう。昼間もオフ会や誕生日会、同性婚パーティーなどの会場と利用されている。</p>
 
-<div id="menu-2">
-	<img src="image/foodmenu/aiso_mainmenu-19august.jpg" width="400px" /><br />
+<!-- <div id="menu-2">
+	<img src="image/foodmenu/aiso_mainmenu-20jan.jpg" width="400px" /><br />
 		<p><span class="food-font">MAIN BAR一押し<br />
-			『Sea side』&nbsp;&yen;1000</span><br />
-			コカハーバルリキュールのAGWAをベースに『海で出会った彼との恋』をイメージしたカクテルができました! さっぱりとした味わいのカクテルを飲んで、一夏の恋しませんか?
+			『ストロベリーショコラミルク』&nbsp;&yen;800</span><br />
+			ストロベリークリームのお酒をミルクで割ったあま～いカクテル♥<br>隠し味にチョコリキュールも入れて甘さ倍増!!
 		</p>
+</div> -->
+
+<div id="menu-6">
+	<img src="image/foodmenu/aiso_mainmenu-20apr.jpg" width="400px" /><br />
+		<p><span class="food-font">『ちぇりーぼんぼん』&nbsp;&yen;800</span><br />
+			チェリー＆チョコレートリキュールに珈琲をプラスしたカクテルは、少しほろ苦くて甘い春のような恋心。あの頃の気持ちを思い出して…
+					</p>
 </div>
 
-<div id="menu-2">
-	<img src="image/foodmenu/aiso_submenu-19august.jpg" width="400px" /><br />
-		<p><span class="food-font">LOUNGE BAR一押し<br />
-						『塩キャラメルフロート』&nbsp;&yen;800</span><br />
-			塩キャラメルのウォッカをコーラで割って生クリームとキャラメルソースをたっぷりトッピング♥ 甘くてちょっぴり強いデザートカクテルです!! シナモンパウダーもお好みで♥
-		</p>
-</div>
 <div class="clear"></div>
 
 <div id="menu-5">
@@ -527,7 +546,7 @@ $(function(){
 </div>
 
 <div id="menu-5">
-	<p><span class="food-font">カクテル&nbsp;COCKTAIL&nbsp;&nbsp;各種&nbsp;&yen;600～</span><br />
+	<p><span class="food-font">カクテル&nbsp;COCKTAIL&nbsp;&nbsp;各種&nbsp;&yen;700～</span><br />
 	※アルコール　濃いめ+￥100　ダブル+￥300　でオーダー承ります。</p>
 </div>
 
@@ -540,7 +559,7 @@ $(function(){
 </div>
 
 <div id="menu-5">
-	<p><span class="food-font">グラスワイン&nbsp;GLASS WINE&nbsp;&nbsp;各種&nbsp;&yen;600</span></p>
+	<p><span class="food-font">グラスワイン&nbsp;GLASS WINE&nbsp;&nbsp;各種&nbsp;&yen;700</span></p>
 </div>
 
 <div id="menu-5">
@@ -549,7 +568,7 @@ $(function(){
 
 
 <div id="menu-4">
-	<p><span class="food-font">シャンパン CHAMPAGNE　各種&nbsp;&yen;13,000～</span></p>
+	<p><span class="food-font">シャンパン CHAMPAGNE　各種&nbsp;&yen;15,000～</span></p>
 </div>
 
 <div class="clear"></div>
@@ -558,7 +577,7 @@ $(function(){
 
 &nbsp;
 
-<h2 id="aiiro">AiiRO CAFE</h2>
+<h2 id="aiiro" name="aiiro">AiiRO CAFE</h2>
 <div id="pay_icon">
 <i class="fa fa-credit-card fa-fw" aria-hidden="true"></i> CREDIT OK!&nbsp;&nbsp;
 <i class="fa fa-money fa-fw" aria-hidden="true"></i> WEB MONEY OK!
@@ -566,16 +585,16 @@ $(function(){
 <p>仲通りに面した、カジュアルなオープンカフェ＆バー。常連客もビギナーの方もすぐに打ち解ける事が空間をご提供しており、外国人の方も多くご来店されています。</p>
 
 <div id="menu-6">
-	<img src="image/foodmenu/aiiro-19august.jpg" width="400px" /><br />
-		<p><span class="food-font">『Green Bamboo』&nbsp;&yen;1000</span><br />
-			夏といえばこれ!! 毎年大人気のAiiROオリジナルのきゅうりのカクテル! さっぱりとした後味、見た目も映え! たまには細いきゅうりも味わって♥
+	<img src="image/foodmenu/aiiro-20apr.jpg" width="400px" /><br />
+		<p><span class="food-font">『Coffee Rumba de Mojito』&nbsp;&yen;1200</span><br />
+			暖かい季節になると飲みたくなるモヒート。今までにない味わいのコーヒーモヒートが完成！コーヒーと炭酸の組み合わせ、是非試してみてね♡
 					</p>
 </div>
 
 <div class="clear"></div>
 
 <div id="menu-5">
-	<p><span class="food-font">SOFT DRINK&nbsp;各種&yen;500</span></p>
+	<p><span class="food-font">SOFT DRINK&nbsp;各種&yen;600</span></p>
 </div>
 
 <div id="menu-5">
@@ -583,14 +602,30 @@ $(function(){
 </div>
 
 <div id="menu-5">
-	<p><span class="food-font">COCKTAIL&nbsp;各種&yen;700</span></p>
+	<p><span class="food-font">COCKTAIL&nbsp;各種&yen;700〜&yen;1200</span></p>
 </div>
 
 <div id="menu-5">
-	<p><span class="food-font">SHOCHU&nbsp;各種&yen;600</span></p>
+	<p><span class="food-font">SHOCHU&nbsp;各種&yen;700</span></p>
 </div>
 
 <div class="clear"></div>
+
+&nbsp;
+
+
+<h2 id="avant" name="avant">AVANTGARDE</h2>
+
+<div id="menu-6">
+	<img src="image/foodmenu/AVANTGARDE-20apr.jpg" width="400px" /><br />
+		<p><span class="food-font">『ほろ苦のダンディズム』コーヒー焼酎&nbsp;&yen;1,000</span><br />
+			アバンギャルドに新しい飲み方が増えました！<br>コーヒー豆を焼酎に付けるだけですがこれ美味いんですよ！是非お試しあれ♡
+
+					</p>
+</div>
+
+<div class="clear"></div>
+
 
 &nbsp;
 

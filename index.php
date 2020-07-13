@@ -83,7 +83,7 @@ $(function(){
 
 	var targetMonth = "";
 	var todayDate = new Date();
-	var changeDate = new Date(2019, 8-1, 1);
+	var changeDate = new Date(2020, 4-1, 1);
 
 	if( todayDate.getTime() > changeDate.getTime() ){
 		$("#this_month").hide();
@@ -147,7 +147,7 @@ $(function(){
 <div id="big-container">
 
 <div class="lead-txt"><p>新宿2丁目の遊び場！クラブ、Bar、カフェなど系列店舗合同ウェブサイト | <a href="https://translate.google.com/translate?hl=en&sl=ja&tl=en&u=https://aliving.net">ENGLISH</a></p></div>
-<div class="sns_icon"><a href="https://twitter.com/anniv_aliving" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a href="https://www.facebook.com/events/448058282221744/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="https://www.instagram.com/aisotope_lounge/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+<div class="sns_icon"><a href="https://twitter.com/AiSOTOPE_LOUNGE" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a><a href="https://www.facebook.com/AiSOTOPE.info/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a><a href="https://www.instagram.com/aisotope_lounge/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
 <div id="header"></div>
 
 <div id="header-navi">
@@ -172,19 +172,23 @@ $(function(){
 
 					<div id="showcase">
 						<div id="bigPic">
+							<a href="https://lin.ee/cpgn0Fg" target="_blank"><img src="slideimg/top_line.jpg" alt="" /></a>
+							<a href="https://note.com/cappellasistina" target="_blank"><img src="slideimg/top_info2020.jpg" alt="" /></a>
 							<a href="https://aliving.net/AVANTGARDE/" target="_blank"><img src="slideimg/top_2.jpg" alt="" /></a>
-							<img src="slideimg/top_3.jpg" alt="" />
-							<a href="https://aliving.net/wanted.html" onclick="window.open('wanted.html','foo','width=540,height=500,scrollbars=yes'); return false;" target="_blank"><img src="slideimg/top_4.jpg" alt="" /></a>
 							<a href="https://aliving.net/aiirocafe/" target="_blank"><img src="slideimg/top_5.jpg" alt="" /></a>
-							<a href="https://www.facebook.com/QUEENSLOUNGETHESHOW/" target="_blank"><img src="slideimg/top_6.jpg" alt="" /></a>
+
+<!-- 						<a href="https://aliving.net/wanted.html" onclick="window.open('wanted.html','foo','width=540,height=500,scrollbars=yes'); return false;" target="_blank"><img src="slideimg/top_4.jpg" alt="" /></a> -->
+<!-- 						<a href="https://twitter.com/queenslounge_ts" target="_blank"><img src="slideimg/top_6.jpg" alt="" /></a> -->
 						</div><!--bigPic-->
 						<div id="smallPic">
 							<ul id="thumbs">
-							<li class="active" rel="1"><img src="slideimg/top_2.jpg" class="object-fit-img"></li>
-							<li rel="2"><img src="slideimg/top_3.jpg" class="object-fit-img"></li>
-							<li rel="3"><img src="slideimg/top_4.jpg" class="object-fit-img"></li>
+							<li class="active" rel="1"><img src="slideimg/top_line.jpg" class="object-fit-img"></li>
+							<li rel="2"><img src="slideimg/top_info2020.jpg" class="object-fit-img"></li>
+							<li rel="3"><img src="slideimg/top_2.jpg" class="object-fit-img"></li>
 							<li rel="4"><img src="slideimg/top_5.jpg" class="object-fit-img"></li>
-							<li rel="5"><img src="slideimg/top_6.jpg" class="object-fit-img"></li>						
+
+<!-- 							<li rel="2"><img src="slideimg/top_4.jpg" class="object-fit-img"></li>
+							<li rel="4"><img src="slideimg/top_6.jpg" class="object-fit-img"></li> -->						
 							</ul>
 						</div><!-- thumbs -->
 					</div><!-- showcase -->
@@ -204,10 +208,134 @@ $(function(){
 -->
 
 <div class="block">
-	<span class="date">2019.7.21(sun)</span>
+	<span class="date">2020.7.3(fri)</span>
 		<p class="info-text">
-			<a href="https://aliving.net/schedule.php?month=2019-08">8月のスケジュール</a>を更新しました。<br />
+			<a href="https://aliving.net/schedule.php?month=2020-07">7月のスケジュール</a>を更新しました。<br />
 		</p>
+</div>
+
+<div class="block">
+	<span class="date">2020.4.28(wed) </span>
+		<p class="info-text">
+			<span class="aiso" style="margin-left: 0">AiSOTOPE LOUNGE</span><br>
+			現在、営業自粛期間中に伴い、臨時休業とさせていただいておりますが、今後の営業再開に関しましては、感染拡大状況や政府・行政の方針等の情報を見極めた上で検討いたします。<br> 5月イベントスケジュールは、再開の目処が立ちましたらお知らせいたします。
+		</p>
+</div>
+
+<div class="block">
+	<span class="date">2020.3.26(thu) </span>
+		<p class="info-text">
+			【重要なお知らせ】<span class="aiso">AiSOTOPE LOUNGE</span><br>
+			<a href="image/information0326.pdf" target="_blank">新型コロナウイルス感染拡大予防に伴う、イベントの開催中止・延期ならびに臨時休業のお知らせです。</a><br>
+			苦渋の決断ではございますが、ご理解賜りますようお願い申し上げます。
+		</p>
+</div>
+
+<div class="block">
+	<span class="date">2020.3.23(mon) </span>
+		<p class="info-text">
+			【定休日変更のお知らせ】<span class="alamas">ALAMAS CAFE</span><br>
+			日頃よりALAMAS CAFEをご愛顧いただきありがとうございます。<br>
+			誠に勝手ながら、4月よりしばらくの間、定休日を下記の通り変更させていただきます。<br>
+			<br>
+			定休日：月曜日・火曜日<br>
+			※営業時間に変更はございません<br>
+			※祝前日など日程により翌日を振替休日とさせていただく場合がございます予めご了承ください。<br>
+			<br>
+			お客様にはご迷惑をお掛けいたしますが、今後ともALAMAS CAFEをよろしくお願い申し上げます。<br>
+			<a href="image/alamas_closed.jpg"  rel="lightbox[INFORMATION-ALAMAS CAFE]"><img src="image/alamas_closed.jpg" width="200px"></a>
+		</p>
+</div>
+
+<div class="block">
+	<span class="date">2020.3.06(fri)</span>
+		<p class="info-text">
+			【重要なお知らせ】<br>
+			新型コロナウイルス感染拡大予防に伴う、イベント運営及びご来場に際して、趣旨をご理解いただき、下記ご協力のほどお願い致します。<br>
+			<br>
+			・会場内でのマスクの着用など、ご来場者様ご自身で感染予防対策をお願い致します。<br>
+			・エントランス付近に手指消毒用のアルコール消毒液を設置致しますので利用後にご入店ください。<br>
+			　※アレルギーの方、手荒れが酷い方はトイレにて手洗いをしてからイベントをお楽しみください。<br>
+			・BAR付近において、約2時間に1回程、バーカウンターの消毒・除菌を目的とした清掃を行います。<br>
+			　近隣でお楽しみいただいている方には恐縮ですがご協力を宜しくお願い致します。<br>
+			・ご来場者様及びスタッフへの感染防止を考慮し、一部スタッフはマスク着用でのご案内をさせていただきますが
+			　マスク不足の状況下のため、マスク着用は強制ではございませんのでご了承ください。<br>
+			・ご入場時のIDチェックの際に一度マスクを取り外しを依頼させていただく場合もございますので予めご了承ください。<br>
+			・ご入場時に非接触系体温計で体温確認を行い、37.5度以上のお客様・体調が優れない方の入店をお断りさせていただきます。<br>
+			　遠方から来られるお客様はご自宅で1度測られてからお越しください。<br>
+			<br>
+			行政の方針、感染拡大状況など今後の情勢によっては、お客様・出演者・スタッフの健康と安全を最優先に考慮し、<br>
+			イベント開催の中止・延期・内容の変更をさせていただく可能性がございます。予めご了承ください。<br>
+			<br>
+			2020年3月6日<br>
+			株式会社カペラシスティーナ / AiSOTOPE LOUNGE<br>
+			<a href="image/20200316_info.jpg"  rel="lightbox[INFORMATION-AiSOTOPE]"><img src="image/20200316_info.jpg" width="250px"></a>
+		</p>
+</div>
+
+<div class="block">
+	<span class="date">2020.1.13(mon)</span>
+		<p class="info-text">
+			<a href="image/202001013.JPG"  rel="lightbox[INFORMATION-AiSOTOPE]"><img src="image/202001013.JPG" width="200px" align="left" style="padding-right:8px"></a>日本テレビ2020年1月期土曜ドラマ、主演・天海祐希「トップナイフ－天才脳外科医の条件－」のエンディングダンスにAiSOTOPE LOUNGEがロケ地として使用されました。ぜひご覧ください！<span class="aiso">AiSOTOPE</span><br>
+			<br>
+			▽放送日時：毎週土曜日 夜10時放送<br>
+			▽放送局：日本テレビ<br>
+			▽番組名：トップナイフ－天才脳外科医の条件－<br>
+			<a href="https://www.ntv.co.jp/topknife/" target="_blank">https://www.ntv.co.jp/topknife/</a><br />
+		</p>
+                          <div style="clear:both"></div>
+</div>
+
+<div class="block">
+	<span class="date">2020.1.1(wed)</span>
+		<p class="info-text">
+			<a href="image/2020_newyear_info.jpg"  rel="lightbox[INFORMATION-AiSOTOPE]"><img src="image/2020_newyear_info.jpg" width="100px" align="left" style="padding-right:8px"></a>あけましておめでとうございます。本年も笑ってよろしくお願いします。<br>
+AiSOTOPE LOUNGE・ALAMAS CAFE・AiiRO CAFE・AVANGARDE TOKYOは1月2日より営業致します。詳しくはスケジュールページを御覧ください。<br />
+		</p>
+                          <div style="clear:both"></div>
+</div>
+
+<div class="block">
+	<span class="date">2019.10.10(thu)</span>
+		<p class="info-text">
+			【台風19号接近に伴う開催中止のお知らせ】<br>
+			10月12日(土) 『K-POP 1.2.3.LESSON』『KazzのSound Passage』『こてつんち』 『DIAMOND CUTTER』 につきまして、
+			台風19号の影響による開催の是非を検討、協議を重ねて参りましたが、
+			今年最大規模という連日の気象情報・報道から、公共交通機関の乱れ、来場されるお客様の安全等を第一に考慮し、
+			誠に残念ながら開催を中止させていただくこととなりました。<br>
+			<br>
+			今後の気象情報が変わる可能性も期待したいところでしたが、
+			遠方からお越しになられるお客様も多くいらっしゃるため、
+			ご迷惑をできる限り軽減できますよう現時点で判断させていただきました。<br>
+			ご来場を予定してくださった皆様には大変申し訳なく、心よりお詫び申し上げます。<br>
+			<br>
+			交通機関その他の混乱による不測の事態が心配されます。<br>
+			まずはこの強力な台風の接近に際し、
+			身の安全を第一に、十分注意いただきますようお願い申し上げます。<br />
+		</p>
+</div>
+
+<div class="block">
+	<span class="date">2019.10.1(tue)</span>
+		<p class="info-text">
+			<img src="image/monthly201910.jpg" width="100px" align="left" style="padding-right:8px">【A living paper最新号】<br>10月の表紙はデビュー35周年記念ツアーで来日目前『シンディ・ローパー』がソニー・ミュージック公認で本紙初登場！アイソ系列店舗を中心に順次全国配布予定。是非お手にとってご覧ください！<br />
+		</p>
+                          <div style="clear:both"></div>
+</div>
+
+<div class="block">
+	<span class="date">2019.10.1(tue)</span>
+		<p class="info-text">
+			<a href="https://aliving.net/menu.html">10月のメニュー</a>を更新しました。<br />
+		</p>
+</div>
+
+<div class="block">
+	<span class="date">2019.9.23(mon)</span>
+		<p class="info-text">
+			<a href="image/20190923_info.jpg"  rel="lightbox[INFORMATION-AiSOTOPE]"><img src="image/20190923_info.jpg" width="100px" align="left" style="padding-right:8px"></a><br>消費税率引上げに伴う価格改定のお知らせ <span class="aiso">AiSOTOPE</span><br />
+		</p>
+                          <div style="clear:both"></div>
 </div>
 
 <div class="block">
@@ -218,14 +346,6 @@ $(function(){
 </div>	
 
 <div class="block">
-	<span class="date">2019.6.1(sat)</span>
-		<p class="info-text">
-			<a href="https://aliving.net/menu.html">6月のメニュー</a>を更新しました。<br />
-		</p>
-</div>
-
-
-<div class="block">
 	<span class="date">2019.3.2(sat)</span>
 		<p class="info-text">
 			<a href="image/20190302.jpg" target="_blank"><img src="image/20190302.jpg" width="100px" align="left" style="padding-right:8px">
@@ -234,147 +354,6 @@ $(function(){
                           <div style="clear:both"></div>
 </div>	
 
-<div class="block">
-	<span class="date">2018.12.22(sat)</span>
-		<p class="info-text">
-			<a href="https://aliving.net/2018-countdown/">「2018年カウントダウンイベント特設サイト」がオープンしました！</a>
-		</p>
-</div>	
-
-<div class="block">
-	<span class="date">2018.11.10(sat)</span>
-		<p class="info-text">
-			<a href="https://aliving.net/AVANTGARDE/">「アバンギャルド トウキョウ」HPが完成いたしました！</a><span class="avan">AVANTGARDE</span>
-		</p>
-</div>	
-
-<div class="block">
-	<span class="date">2018.7.10(mon)</span>
-		<p class="info-text">
-			<a href="anniv2018/">2018年アニバーサリー特設サイトオープンいたしました！</a>
-		</p>
-</div>	
-				
-<div class="block">
-	<span class="date">2018.5.27(sun)</span>
-		<p class="info-text">
-			6月12日(火) AiSOTOPELOUNGEで予定をしておりました『Diesel Disco Club』『PUB★おベガス！』はお休みとなりましたのでお知らせいたします。次回は7月17日(火)の開催予定でございますので、皆様のご来店お待ち致しております。<span class="aiso">AiSOTOPE</span>
-		</p>
-</div>				
-				
-				
-<div class="block">
-	<span class="date">2018.3.23(fri)</span>
-		<p class="info-text">
-			<img src="image/DDT.jpg" width="100px" align="left" style="padding-right:8px">【AiSOTOPEがロケーションで使用されました!!】<br />
-株式会社DDTプロレスリングより3/25両国国技館大会から販売されるHARASHIMA＆高尾蒼馬選手の写真集で撮影ロケーションにAiSOTOPEが使用されました! いつもの雰囲気と違ったAiSOでお二人のステキな表情が満載の一冊です!! 是非、お求めください!<span class="aiso">AiSOTOPE</span>
-		</p>
-															<div style="clear:both"></div>
-</div>
-
-
-<div class="block">
-	<span class="date">2017.12.15(fri)</span>
-		<p class="info-text">
-			<a href="https://aliving.net/2017-countdown/" target="_blank">2017年カウントダウンイベント特設サイトがオープンしました！</a>
-		</p>
-</div>
-
-<div class="block">
-	<span class="date">2017.12.1(fri)</span>
-		<p class="info-text">
-			<img src="image/monthly201712.jpg" width="100px" align="left" style="padding-right:8px">【A living paper最新号】12月号の表紙は故ホイットニー・ヒューストン出演の不朽の名画『ボディガード』が公開から25年、大ヒット曲「オールウェイズ・ラヴ・ユー」初テイク音源ほか、貴重なライブ音源など未発表音源を収録した究極のサウンドトラックが日本限定BSCD2仕様で12月6日発売！<br>
-			映画サウンドトラック『愛よ永遠に～ボディガード25周年記念盤』 <br>
-			■品番：SICP-31131<br>
-			 ■価格：2,500円（＋税）<br>
-			■その他：国内盤のみBlu-Spec CD2仕様 /歌詞・対訳・解説付<br>
-		</p>
-															<div style="clear:both"></div>
-</div>
-<div class="block">
-	<span class="date">2017.11.1(wed)</span>
-		<p class="info-text">
-			<img src="image/monthly201711.jpg" width="100px" align="left" style="padding-right:8px">【A living paper最新号】11月号の表紙は音楽プロデューサーSTYが「二面性」をテーマに描く４つの個性。 洗練されたダンスとボーカルパフォーマンスで世界を魅了する新鋭最強ガールズグループ「BANANALEMON（バナナレモン）」 11/15より「GIRLS GONE WILD」配信決定！
-		</p>
-															<div style="clear:both"></div>
-</div>
-
-
-				<div class="block">
-					<span class="date">2017.10.1(sun)</span>
-						<p class="info-text">
-							<img src="image/monthly201710.jpg" width="100px" align="left" style="padding-right:8px">【A living paper最新号】 10月の表紙は世界一ロックなポップ・クィーン『P!NK』がソニー・ミュージック公認で本紙初登場！10/13(金)に5年振りとなるニューアルバム「ビューティフル・トラウマ」を発売。アイソ系列店舗を中心に順次全国配布予定！是非お手にとってご覧ください！
-						</p>
-						                          <div style="clear:both"></div>
-				</div>
-
-					<div class="block">
-						<span class="date">2017.7.7(fri)</span>
-						<p class="info-text">
-							<a href="https://aliving.net/anniv2017/" target="_blank">2017年アニバーサリー特設サイトオープンしました！<br />
-							</p>
-					</div>
-
-					<div class="block">
-						<span class="date">2016.12.9(fri)</span>
-						<p class="info-text">
-							<a href="https://aliving.net/2016-countdown/">2016年カウントダウンイベント特設サイトがオープンしました。</a><br />
-							</p>
-					</div>
-
-					<div class="block">
-						<span class="date">2016.12.9(fri)</span>
-						<p class="info-text">
-							<a href="download/20161209_info.pdf" target="_blank">ArcH閉店のお知らせ。</a><span class="arch">ArcH</span><br />
-							</p>
-					</div>
-
-					<div class="block">
-						<span class="date">2016.5.13(sat)</span>
-						<p class="info-text">
-							<a href="image/AJISAI_CLOSE.pdf" target="_blank">『スナックあじさい』閉店のご挨拶</a><br />
-							</p>
-					</div>
-
-					<div class="block">
-						<span class="date">2016.4.29(thu)</span>
-						<p class="info-text">
-							系列5店舗合同GW特別企画スタート!! GW中限定で、各店スタッフの出身地の特産品を割り物に使った酎ハイ(￥700)を販売します。最も人気の高かった割り物は、後日、当アプリにて無料で1杯飲めるクーポンを発行予定。ぜひ飲み比べてみて下さい!!
-							</p>
-					</div>
-
-					<div class="block">
-						<span class="date">2016.4.1(fri)</span>
-						<p class="info-text">
-							4月は、<a href="https://aliving.appsta.jp/letter.html?FRONT_LETTER_ID=133" target="_blank">春のA livingアプリキャンペーンを実施!</a>
-                            4月中にインストールするだけでお得なクーポンをGETできちゃう!
-                            もちろん、すでにアプリを使ってる人も嬉しい、<a href="https://aliving.appsta.jp/letter.html?FRONT_LETTER_ID=133" target="_blank">4月限定クーポン</a>を各店ご用意!! 使わなきゃ絶対損です!!
-							</p>
-					</div>
-
-					<div class="block">
-						<span class="date">2016.3.31(thu)</span>
-						<p class="info-text">
-							<a href="https://goo.gl/E5IQgQ" target="_blank"><img src="image/20160331_info.jpg" width="100px" align="left" style="padding-right:8px"></a>外国人向け都内ガイドブック(無料)<a href="https://goo.gl/E5IQgQ" target="_blank">『タイムアウト東京マガジン第10号』</a>にて、ALAMAS CAFEとAiiRO CAFEをご紹介頂きました。<br>
-                            都内の駅構内、空港、宿泊施設等で配布中。ぜひご一読ください!<span class="alamas">ALAMAS CAFE</span><span class="aiiro">AiiRO CAFE</span>
-							</p>
-                          <div style="clear:both"></div>
-					</div>
-
-					<div class="block">
-						<span class="date">2016.3.12(sat)</span>
-						<p class="info-text">
-                        	4月2日の世界自閉症啓発デーに向けて、3月26日(土)は啓発活動の周知や理解を促すため、<a href="https://aliving.net/schedule_detail.php?date=2016-03-26">ALAMAS CAFEとAiiRO CAFEで撮影会</a>をおこないます。イメージカラーであるブルーのアイテムを身につけて記念撮影をしましょう!<span class="alamas">ALAMAS CAFE</span> <span class="aiiro">AiiRO CAFE</span>
-							</p>
-					</div>
-
-					<div class="block">
-						<span class="date">2016.3.5(sat)</span>
-						<p class="info-text">
-							<a href="https://dayout.tokyobookmark.net/" target="_blank"><img src="image/20160305_info.jpg" width="100px" align="left" style="padding-right:8px"></a>都内の新感覚ガイドブック<a href="https://dayout.tokyobookmark.net/" target="_blank">『東京の24時間を旅する本』</a>で、AiSOTOPE LOUNGEとALAMAS CAFEが紹介されました。ぜひご一読下さい!<span class="aiso">AiSOTOPE</span> <span class="alamas">ALAMAS CAFE</span><br>
-							</p>
-                          <div style="clear:both"></div>
-					</div>
 
 		</div><!--info-leftここまで-->
 		<h2 class="top_tittle"><i class="fa fa-twitter" aria-hidden="true"></i> twitter </h2>
@@ -388,36 +367,30 @@ $(function(){
 
 	<div id="side_bar">
 
-<!-- 6/1 start-->
-<div id="this_month">
-<a href="image/monthly_07.jpg" rel="lightbox[INFORMATION]"><img src="image/monthly_07.jpg" alt="Aliving Book" width="240px" style="margin-bottom:10px;"></a>
-</div>
 
-<!--7/1 start-->
-<div id="next_month">
-<a href="image/monthly.jpg" rel="lightbox[INFORMATION]"><img src="image/monthly.jpg" alt="Aliving Book" width="240px" style="margin-bottom:10px;"></a>
-</div>
+	<!-- 3/1 start-->
+	<!--
+	<div id="this_month">
+	<a href="image/monthly_03.png" rel="lightbox[INFORMATION]"><img src="image/monthly_03.png" alt="Aliving Book" width="240px" style="margin-bottom:10px;"></a>
+	</div>
+	-->
+
+	<!--4/1 start-->
+
+	<div id="next_month">
+		<a href="https://camp-fire.jp/projects/view/272787" target="_blank"><img src="slideimg/RESQME_top.jpg" width="100%" style="margin-bottom:10px;max-width:240px"></a>
+		<!--
+		<a href="image/monthly.png" rel="lightbox[INFORMATION]"><img src="image/monthly.png" alt="Aliving Book" width="240px" style="margin-bottom:10px;"></a>
+		-->
+	</div>
 
 <div class="side_banar">
 	<a href="https://ameblo.jp/aliving2/theme-10097006720.html" target="_blank"><img src="image/banar_acvrep.png" alt="活動報告" width="240px" style="margin-bottom:10px"></a>
 	<a href="https://aliving.net/AVANTGARDE/" target="_blank"><img src="image/avant.png" alt="AVANTGARDE TOKYO" width="240px" style="margin-bottom:10px"></a>
-	<a href="https://www.gx3underwear.com/" target="_blank" onClick="ga('send','event','AD','click' ,'https://www.gx3underwear.com/');"><img src="image/GX3.jpg" alt="GX3" width="100%" style="margin-bottom:10px"></a>
+<!-- 	<a href="https://www.gx3underwear.com/" target="_blank" onClick="ga('send','event','AD','click' ,'https://www.gx3underwear.com/');"><img src="image/GX3.jpg" alt="GX3" width="100%" style="margin-bottom:10px"></a> -->
 <!-- 	<a href="https://aliving.net/OVEGAS/" target="_blank"><img src="image/banar_ovegas.png" alt="魅惑の二丁目エンターテインメント！おベガス！" width="240px"></a> -->
-	<img src="image/akemi_banner.jpg" alt="スナックアケミ" width="240px" style="margin-bottom:-4px" >
-	<video controls poster="image/akemi_movie_poster.png" width="240" height="auto">
-		<source src="image/dance03-3.mp4">
-	</video>
 
 </div>
-
-
-<!--
-<div class="side_banar_passbook">
-<a href="https://goo.gl/n61sNg" target="_blank"><img src="image/passbook_aiso.png" alt="Passbook"></a>
-<a href="https://goo.gl/yUrOmQ" target="_blank"><img src="image/passbook_alamas.png" alt="Passbook"></a>
-<a href="https://goo.gl/mTEmrK" target="_blank"><img src="image/passbook_and.png" alt="Passbook"></a>
-</div>
--->
 
 	</div><!--side_barここまで-->
 
@@ -430,8 +403,7 @@ $(function(){
 	        <ul class="atn_list">
 				<li>◯ 入場時に全ての方にIDチェックをさせて頂きます。<br />
 				※顔写真付きの身分証明証を必ずお持ち下さい。（運転免許証・パスポート・住民基本台帳カード・外国人登録証明書・学生証）</li>
-				<li>◯ 18歳 未満の方、高校在学中の方、写真付きの身分証明証をお持ちでない方はご入場できません。（イベントによって20歳以上限定の場合もございます）<br />
-				※酒類の提供は20歳以上の方のみとなります。未成年の飲酒・喫煙が発覚した場合、AiSOTOPE LOUNGEへの出入り禁止・即刻退場の処置を致します。成人者が未成年への飲酒・喫煙の誘発をした場合においても同様の処置をいたします。</li>
+				<li>◯ 20歳 未満の方、高校在学中の方、写真付きの身分証明証をお持ちでない方はご入場できません。</li>
 				<li>◯ お客様のプライバシー保護の為、店内の写真撮影は一切禁止しております。</li>
 				<li>◯ 店内への飲食の持込は一切禁止しております。また発見された場合は、2,000円の罰金を頂きます。</li>
 				<li>◯ 過度の泥酔や他の方の迷惑となる行為をされた方は退場または入場をお断りする場合がございます。その際、チケット代は返金いたしませんのでご了承ください。</li>

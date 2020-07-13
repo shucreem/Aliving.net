@@ -277,7 +277,13 @@
 		-moz-border-radius:5px;   /* Firefox用 */
 		word-wrap: break-word;
 	}
-
+	.calendar_element .event-stop-cal {
+	    background: #666;
+	    color: #ddd;
+	    padding: 2px 5px;
+	    border-radius: 4px;
+	    display: block;
+	}
 
 	/***
 	 *
@@ -363,8 +369,18 @@
 		margin-left:4px;
 	}
 
+	.event-stop {
+	    background: #ff0000;
+	    color: #fff;
+	    padding: 8px 10px;
+	    font-weight: bold;
+	    font-size: 18px;
+	    border-radius: 5px;
+	    display: block;
+	}
+	
 	.event_info_box, .event_detail_box, .event_title_box, .event_flyer_box {
-		magin-top : 10px;
+		margin-top : 10px;
 	}
 
 	.event_flyer {
@@ -372,6 +388,9 @@
 		margin-bottom:8px;
 		padding:2px;
 		display:inline;
+	}
+	.event_flyer_box{
+		display: flex;
 	}
 
 	.event_info_title{
@@ -595,6 +614,10 @@
 	}
 	.single_event {
 		margin-left: 0px;
+	}
+
+	.event_flyer_box{
+		flex-direction: column;
 	}
 	.event_flyer a img {
 		width: 99.5%;

@@ -1468,16 +1468,15 @@ body{
 .lead-txt {
   font-size:0.8em;
   border-bottom: 1px dotted #333;
-  padding-bottom: 10px;
-  padding-top: 6px;
+  padding: 0px 10px 4px;
   text-align: center;
 }
 .lead-txt p {
     padding: 5px 0px 0px 0px;
 }
 #header{
-  height: 50px;
-  background-size: 140%;
+  height: 20px;
+  background-size: 100%;
 }
 #header-navi {
   display: none;
@@ -1505,7 +1504,7 @@ body{
 }
 #smallPic {
     width: 100%;
-    margin-top: 40%;
+    padding-top: 40%;
 }
 ul#thumbs{
   padding:0px;
@@ -1545,7 +1544,12 @@ iframe#twitter-widget-0{
     width: calc(100vw - 20px)!important;
   }
 
+#side_bar .side_banar{
+	width: 160%;
+}
+
 #side_bar {
+	display: flex;
     float: none;
     text-align: center;
     width: 95%;
@@ -1553,7 +1557,7 @@ iframe#twitter-widget-0{
     margin-top: 10px;
 }
 #side_bar a img{
-  width:100%;
+  width:95%;
 }
 
 #this_month a img{
