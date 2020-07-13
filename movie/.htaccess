@@ -1,0 +1,7 @@
+    AuthUserFile /export/sd209/www/jp/r/e/gmoserver/4/6/sd0432146/aliving.net/movie/.htpasswd
+    AuthGroupFile /dev/null
+    AuthName MembersOnly
+    AuthType Basic
+    <Limit GET POST>
+    require valid-user
+    </Limit>
